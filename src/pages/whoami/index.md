@@ -8,9 +8,11 @@ My name is mr.d0x and I'm a Cyber Security Specialist and a privacy enthusiast.<
 
 I created this blog to serve the following purposes:
 
-1.  Documenting <i>potentially</i> useful methods that can help others during penetration testing/red team engagements
-2.  Give my perspective on how I think through problems (doesn't mean it's the right way)
-3.  Inspire others 
+1.  Sharing <i>potentially</i> useful techniques that can help others during penetration testing/red team engagements
+2.  Giving my perspective on how I think through problems (might not be the right or efficient way)
+3.  Documenting techniques so I can refer back to them in the future
 
-There may be mistakes in some of the things I write or a better way of doing things.
-If you'd like to recommend topics for the blog or just chat feel free to DM me on twitter <b>@mrd0x</b>.
+There may be mistakes or a better way of doing things so if you have any comments or suggestions feel free to DM me on twitter. Lastly, the content on this blog will vary in difficulty and some topics will be easier than others. I'll leave that up to you to figure out.
+
+Instagram: <b>@TheCyberSecurityTutor</b>
+Twitter: <b>@mrd0x</b>
