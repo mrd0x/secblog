@@ -38,14 +38,12 @@ You also want to do the following:
 3.  Right click the project and select 'Properties' then replace all instances of 'Rubeus' to your new word
 4.  Compile and build as a x64 executable
 
-![Rubeus-vt-3](./vt-rubeus-hash-3.JPG)
-Detection rate dropped to 21
+![Rubeus-vt-3](./vt-rubeus-hash-3.png)
+Detection rate dropped to 23
 
 ### Modifying Variables, Comments And Functions
 
 We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for 'malicious keywords' like Bruteforcer and replace that. Remove comments and modify text within print statements.
-
-![Modifications](./modifications.JPG)
 
 ![Find-and-replace-2](./find-and-replace-all-2.JPG)
 
