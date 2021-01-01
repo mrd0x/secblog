@@ -1,6 +1,6 @@
 ---
 title: Bypass Signature Based Detection
-date: "2020-01-02"
+date: "2021-01-02"
 featuredImage: './defender.jpg'
 ---
 
@@ -13,12 +13,12 @@ Before starting we need to understand what signature based detection is and how 
 
 If you upload Rubeus to VirusTotal you can see the hash of the file. This hash can be used as a signature to uniquely identify the file, although most antivirus agents will probably create multiple signatures of the file by taking excerpts of the source code.
 
-![Rubeus-vt](./vt-rubeus-hash.jpg)
+![Rubeus-vt](./vt-rubeus-hash.JPG)
 Rubeus binary with no modifications has 31 detections
 
 What happens if we remove a single comment from the source code?
 
-![Rubeus-vt-2](./vt-rubeus-hash-2.jpg)
+![Rubeus-vt-2](./vt-rubeus-hash-2.JPG)
 Rubeus binary after removing a random comment in the source code has 28 detections
 
 If you look carefully you'd notice 2 differences.
@@ -30,7 +30,7 @@ If you look carefully you'd notice 2 differences.
 
 First thing's first, let's find and replace the term 'Rubeus' with a new word. I'm using Visual Studio so to do that use Ctrl+Shift+H:
 
-![Find-and-replace](./find-and-replace-all.jpg)
+![Find-and-replace](./find-and-replace-all.JPG)
 
 You also want to do the following:
 1.  Open up the .sln file with a text editor and replace all instances of Rubeus with your new word
@@ -38,16 +38,16 @@ You also want to do the following:
 3.  Right click the project and select 'Properties' then replace all instances of 'Rubeus' to your new word
 4.  Compile and build as a x64 executable
 
-![Rubeus-vt-3](./vt-rubeus-hash-3.jpg)
+![Rubeus-vt-3](./vt-rubeus-hash-3.JPG)
 Detection rate dropped to 21
 
 ### Modifying Variables, Comments And Functions
 
 We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for 'malicious keywords' like Bruteforcer and replace that. Remove comments and modify text within print statements.
 
-![Modifications](./modifications.jpg)
+![Modifications](./modifications.JPG)
 
-![Find-and-replace-2](./find-and-replace-all-2.jpg)
+![Find-and-replace-2](./find-and-replace-all-2.JPG)
 
 The problem with this method is we are arbitrarily replacing words without knowing whether it'll have an effect or not. In the next section we'll try to pinpoint the signature.
 
@@ -79,17 +79,17 @@ head -c 181500 Mrdox.exe > test.exe
 
 Great! Now we know that Defender is triggering somewhere between 181000 and 181500 bytes. Let's open the last file with HxD and check out the last 500 bytes.
 
-![Hxd-Analysis](./hxd-analysis.jpg)
+![Hxd-Analysis](./hxd-analysis.JPG)
 
 Defender's signature is somewhere in the highlighted part. The most common word we see is 'tickets' so let's do a find and replace on 'tickets' and replace it with a different word.
 
-![Results](./find-and-replace-all-results.jpg)
+![Results](./find-and-replace-all-results.JPG)
 
 Now when we scan the file Defender doesn't trigger! We successfully bypassed Defender and can now run Rubeus.
 
-![Clean-Scan](./clean-scan.jpg)
+![Clean-Scan](./clean-scan.JPG)
 
-![Clean-File](./clean-file.jpg)
+![Clean-File](./clean-file.JPG)
 
 ## References
 
