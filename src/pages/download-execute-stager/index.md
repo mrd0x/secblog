@@ -8,7 +8,7 @@ In this post we're going to create a C program that will download a stager and i
 
 Before starting we need to understand what stager payloads are. If you've used Metasploit Framework then you might've seen that word being thrown around but never really understood what it means. 
 
-In simple terms a stager is reponsible for establishing commmunication with the attacker's machine and downloading and executing a larger payload called the Stage. You may ask why we don't simply download the Stage directly instead of having our stager download the stage. Well the reality is you won't always have the luxury of having unlimited memory for bytes. If you've done challenging Buffer Overflow labs then you would've encountered limited buffer space to inject your payload. In cases like that you'd need a small payload to ultimately grab your large payload and do the damage.
+In simple terms a stager is reponsible for establishing commmunication with the attacker's machine and downloading and executing a larger payload called the Stage. You may ask why we don't simply download the Stage directly instead of having our stager download the stage. Well the reality is you won't always have the luxury of having unlimited memory space. If you've done challenging Buffer Overflow labs then you would've encountered limited buffer space to inject your payload. In cases like that you'd need a small payload to ultimately grab your large payload and do the damage.
 
 ## Sliver C&C Framework
 
