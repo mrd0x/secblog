@@ -81,7 +81,7 @@ Great! Now we know that Defender is triggering somewhere between 181000 and 1815
 
 Defender's signature is somewhere in the highlighted part. The most common word we see is 'tickets' so let's do a find and replace on 'tickets' and replace it with a different word.
 
-![Results](./find-and-replace-all-results.JPG)
+![Results](./find-and-replace-all-results.png)
 
 Now when we scan the file Defender doesn't trigger! We successfully bypassed Defender and can now run Rubeus.
 
