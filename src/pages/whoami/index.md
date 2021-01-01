@@ -14,5 +14,8 @@ I created this blog to serve the following purposes:
 
 There may be mistakes or a better way of doing things so if you have any comments or suggestions feel free to DM me on twitter. Lastly, the content on this blog will vary in difficulty and some topics will be easier than others. I'll leave that up to you to figure out.
 
+
+
 Instagram: <b>@TheCyberSecurityTutor</b>
+
 Twitter: <b>@mrd0x</b>
