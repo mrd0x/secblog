@@ -4,7 +4,7 @@ date: "2021-01-02"
 featuredImage: './defender.jpg'
 ---
 
-In this post we explore how to bypass antivirus signature based detection of malicious binaries with a practical example <!-- end -->
+In this post we explore how to bypass antivirus signature based detection of malicious binaries with a practical example. <!-- end -->
 For this example I'm going to use <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> as the malicious binary.
 
 ## What is Signature Based Detection?
@@ -79,7 +79,7 @@ head -c 181500 Mrdox.exe > test.exe
 
 Great! Now we know that Defender is triggering somewhere between 181000 and 181500 bytes. Let's open the last file with HxD and check out the last 500 bytes.
 
-![Hxd-Analysis](./hxd-analysis.JPG)
+![Hxd-Analysis](./hxd-analysis.png)
 
 Defender's signature is somewhere in the highlighted part. The most common word we see is 'tickets' so let's do a find and replace on 'tickets' and replace it with a different word.
 
@@ -87,9 +87,9 @@ Defender's signature is somewhere in the highlighted part. The most common word 
 
 Now when we scan the file Defender doesn't trigger! We successfully bypassed Defender and can now run Rubeus.
 
-![Clean-Scan](./clean-scan.JPG)
+![Clean-Scan](./clean-scan.gif)
 
-![Clean-File](./clean-file.JPG)
+![Clean-File](./clean-file.png)
 
 ## References
 
