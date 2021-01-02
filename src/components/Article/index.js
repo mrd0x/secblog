@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import userConfig from '../../../config';
 
 const Article = styled.article`
-  color: #252525;
+  color: #222222;
   font-size: 18px;
 
   a {
@@ -16,7 +16,7 @@ const Article = styled.article`
   }
 
   h1 {
-    color: #3e465b;
+    color: #222222;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.5;
@@ -24,7 +24,7 @@ const Article = styled.article`
   }
 
   h2 {
-    color: #3e465b;
+    color: #222222;
     font-size: 22px;
     font-weight: 700;
     line-height: 1.5;
@@ -32,7 +32,7 @@ const Article = styled.article`
   }
 
   h3 {
-    color: #3e465b;
+    color: #222222;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.5;
@@ -40,7 +40,7 @@ const Article = styled.article`
   }
 
   h4 {
-    color: #3e465b;
+    color: #222222;
     font-weight: 700;
     line-height: 1.5;
     margin: 25px 50px 15px;
@@ -48,7 +48,7 @@ const Article = styled.article`
 
   h5,
   h6 {
-    color: #3e465b;
+    color: #222222;
     font-weight: 700;
     line-height: 1.5;
     margin: 25px 50px 15px;
