@@ -41,7 +41,7 @@ You also want to do the following:
 ![Rubeus-vt-3](./vt-rubeus-hash-3.png)
 Detection rate dropped to 23
 
-## Modifying Variables, Comments And Functions
+### Modifying Variables, Comments And Functions
 
 We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for 'malicious keywords' like Bruteforcer and replace that. Remove comments and modify text within print statements.
 

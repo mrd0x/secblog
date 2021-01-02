@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
 
     pre[class*="language-"] {
       margin: 0;
-      padding: 25px 100px;
+      padding: 25px 10px;
     }
   }
 
