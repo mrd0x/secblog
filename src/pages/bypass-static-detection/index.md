@@ -33,7 +33,7 @@ First thing's first, let's find and replace the term 'Rubeus' with a new word. I
 
 You also want to do the following:
 1.  Open up the .sln file with a text editor and replace all instances of Rubeus with your new word
-2.  Modify the folder names of the project and 'Rubeus.csproj' to your new word
+2.  Modify the 'Rubeus' folder names of the project and 'Rubeus.csproj' to your new word
 3.  Right click the project and select 'Properties' then replace all instances of 'Rubeus' to your new word
 4.  Compile and build as a x64 executable
 
@@ -42,7 +42,7 @@ Detection rate dropped to 23
 
 ### Modifying Variables, Comments And Functions
 
-We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for malicious keywords like 'Bruteforcer' and replace that. Remove comments and modify text within print statements.
+We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for malicious keywords like 'Bruteforcer' and replace that. Remove comments and modify text within print methods (e.g. Console.WriteLine()).
 
 ![Find-and-replace-2](./find-and-replace-all-2.png)
 
@@ -54,22 +54,28 @@ So far it's been simple changes and Defender is still detecting our program so n
 
 What you want to do is split your binary by grabbing the first X bytes and see when Defender detects the binary as a malicious file. My main binary file is 254464 bytes, so I'll start off by getting the first 180000 bytes and seeing if Defender triggers on it, make sure you whitelist your working directory first.
 
-```javascript
-head -c 180000 Mrdox.exe > test.exe
-```
+
+    #Powershell Method
+    Get-Content .\Mrdox.exe -Encoding Byte -TotalCount 180000 | Set-Content test.exe -Encoding byte
+
+    #Linux Way if you have Windows Subsystem for Linux (WSL)
+    head -c 180000 Mrdox.exe > test.exe
+
 ![No-detection](./no-detection.gif)
 
 Defender doesn't trigger. Let's change that to 181000 bytes instead:
 
-```javascript
-head -c 181000 Mrdox.exe > test.exe
-```
+    Get-Content .\Mrdox.exe -Encoding Byte -TotalCount 181000 | Set-Content test.exe -Encoding byte
+
+    head -c 181000 Mrdox.exe > test.exe
+
 
 Still nothing... let's try 181500 bytes:
 
-```javascript
-head -c 181500 Mrdox.exe > test.exe
-```
+    Get-Content .\Mrdox.exe -Encoding Byte -TotalCount 181500 | Set-Content test.exe -Encoding byte
+
+    head -c 181500 Mrdox.exe > test.exe
+
 
 ![Detection](./detection.gif)
 
