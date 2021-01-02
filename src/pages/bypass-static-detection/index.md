@@ -4,8 +4,7 @@ date: "2021-01-02"
 featuredImage: './defender.png'
 ---
 
-In this post we explore how to bypass Windows Defender's signature based detection of malicious binaries with a practical example. <!-- end -->
-For this example I'm going to use <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> as the malicious binary.
+In this post we explore how to bypass Windows Defender's signature based detection of malicious binaries with a practical example. For this example I'm going to use <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> as the malicious binary. <!-- end -->
 
 # What is Signature Based Detection?
 
