@@ -54,26 +54,32 @@ So far it's been simple changes and Defender is still detecting our program so n
 
 What you want to do is split your binary by grabbing the first X bytes and see when Defender detects the binary as a malicious file. My main binary file is 254464 bytes, so I'll start off by getting the first 180000 bytes and seeing if Defender triggers on it, make sure you whitelist your working directory first.
 
+    #Get the first 180000 bytes from Mrdox.exe and save it to test.exe
+    #Use either Powershell or Bash
 
-    #Powershell Method
+    #Powershell
     Get-Content .\Mrdox.exe -Encoding Byte -TotalCount 180000 | Set-Content test.exe -Encoding byte
 
-    #Linux Way if you have Windows Subsystem for Linux (WSL)
+    #Bash
     head -c 180000 Mrdox.exe > test.exe
 
 ![No-detection](./no-detection.gif)
 
 Defender doesn't trigger. Let's change that to 181000 bytes instead:
 
+    #Powershell
     Get-Content .\Mrdox.exe -Encoding Byte -TotalCount 181000 | Set-Content test.exe -Encoding byte
 
+    #Bash
     head -c 181000 Mrdox.exe > test.exe
 
 
 Still nothing... let's try 181500 bytes:
 
+    #Powershell
     Get-Content .\Mrdox.exe -Encoding Byte -TotalCount 181500 | Set-Content test.exe -Encoding byte
 
+    #Bash
     head -c 181500 Mrdox.exe > test.exe
 
 
