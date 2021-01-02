@@ -1,7 +1,7 @@
 ---
 title: Bypass Windows Defender's Signature Based Detection
 date: "2021-01-02"
-featuredImage: './defender.jpg'
+featuredImage: './defender.png'
 ---
 
 In this post we explore how to bypass Windows Defender's signature based detection of malicious binaries with a practical example. <!-- end -->
@@ -30,7 +30,7 @@ If you look carefully you'd notice 2 differences.
 
 First thing's first, let's find and replace the term 'Rubeus' with a new word. I'm using Visual Studio so to do that use Ctrl+Shift+H:
 
-![Find-and-replace](./find-and-replace-all.JPG)
+![Find-and-replace](./find-and-replace-all.png)
 
 You also want to do the following:
 1.  Open up the .sln file with a text editor and replace all instances of Rubeus with your new word
@@ -43,7 +43,7 @@ Detection rate dropped to 23
 
 ### Modifying Variables, Comments And Functions
 
-We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for 'malicious keywords' like Bruteforcer and replace that. Remove comments and modify text within print statements.
+We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for malicious keywords like 'Bruteforcer' and replace that. Remove comments and modify text within print statements.
 
 ![Find-and-replace-2](./find-and-replace-all-2.png)
 
@@ -88,6 +88,6 @@ Now when we scan the file Defender doesn't trigger! We successfully bypassed Def
 
 ![Clean-File](./clean-file.png)
 
-## References
+### References
 
 https://www.youtube.com/watch?v=9pwMCHlNma4
