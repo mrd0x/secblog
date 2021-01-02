@@ -4,13 +4,13 @@ date: "2021-01-02"
 featuredImage: './defender.png'
 ---
 
-In this post we explore how to bypass Windows Defender's signature based detection of malicious binaries with a practical example. For this example I'm going to use <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> as the malicious binary. <!-- end -->
+In this post we explore how to bypass Windows Defender's signature based detection of malicious binaries with a practical example. For this example I'm going to use Rubeus as the malicious binary. <!-- end -->
 
 # What is Signature Based Detection?
 
 Before starting we need to understand what signature based detection is and how antivirus agents use this method to catch malicious binaries. An antivirus signature is a continuous sequence of bytes within a malicious binary that uniquely identifies it. Files on your machine are scanned and compared against the a signature database and if there is a match then that file is quarantined and removed off the machine.
 
-If you upload Rubeus to VirusTotal you can see the hash of the file. This hash can be used as a signature to uniquely identify the file, although most antivirus agents will probably create multiple signatures of the file by taking excerpts of the source code.
+If you upload <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> to VirusTotal you can see the hash of the file. This hash can be used as a signature to uniquely identify the file, although most antivirus agents will probably create multiple signatures of the file by taking excerpts of the source code.
 
 ![Rubeus-vt](./vt-rubeus-hash.png)
 Rubeus binary with no modifications has 31 detections
