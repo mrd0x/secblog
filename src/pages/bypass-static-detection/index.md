@@ -7,7 +7,7 @@ featuredImage: './defender.jpg'
 In this post we explore how to bypass Windows Defender's signature based detection of malicious binaries with a practical example. <!-- end -->
 For this example I'm going to use <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> as the malicious binary.
 
-## What is Signature Based Detection?
+# What is Signature Based Detection?
 
 Before starting we need to understand what signature based detection is and how antivirus agents use this method to catch malicious binaries. An antivirus signature is a continuous sequence of bytes within a malicious binary that uniquely identifies it. Files on your machine are scanned and compared against the a signature database and if there is a match then that file is quarantined and removed off the machine.
 
@@ -26,7 +26,7 @@ If you look carefully you'd notice 2 differences.
 1.  The signature (hash) of the file changed
 2.  The detection rate went down which means some AV vendors simply created a signature of the the original binary and just blacklisted that.
 
-## Easy Wins
+# Easy Wins
 
 First thing's first, let's find and replace the term 'Rubeus' with a new word. I'm using Visual Studio so to do that use Ctrl+Shift+H:
 
@@ -41,7 +41,7 @@ You also want to do the following:
 ![Rubeus-vt-3](./vt-rubeus-hash-3.png)
 Detection rate dropped to 23
 
-### Modifying Variables, Comments And Functions
+## Modifying Variables, Comments And Functions
 
 We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for 'malicious keywords' like Bruteforcer and replace that. Remove comments and modify text within print statements.
 
@@ -49,7 +49,7 @@ We want to change the program as much as possible without changing the functiona
 
 The problem with this method is we are arbitrarily replacing words without knowing whether it'll have an effect or not. In the next section we'll try to pinpoint the signature.
 
-## Precise Modifications
+# Precise Modifications
 
 So far it's been simple changes and Defender is still detecting our program so now we're going to find what's triggering Defender. 
 

