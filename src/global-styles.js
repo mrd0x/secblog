@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
   .gatsby-highlight {
     border-bottom: 1px solid #e0e6ed;
     border-top: 1px solid #e0e6ed;
-    margin: 15px -100px;
+    margin: 15px -10px;
     padding: 0;
 
     pre[class*="language-"] {
@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media only screen and (max-width: 870px) {
     .gatsby-highlight {
-      margin: 15px -15px;
+      margin: 15px -5px;
 
       pre[class*="language-"] {
         padding: 25px;

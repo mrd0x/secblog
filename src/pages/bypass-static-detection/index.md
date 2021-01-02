@@ -1,10 +1,10 @@
 ---
-title: Bypass Signature Based Detection
+title: Bypass Windows Defender's Signature Based Detection
 date: "2021-01-02"
 featuredImage: './defender.jpg'
 ---
 
-In this post we explore how to bypass antivirus signature based detection of malicious binaries with a practical example. <!-- end -->
+In this post we explore how to bypass WIndows Defender's signature based detection of malicious binaries with a practical example. <!-- end -->
 For this example I'm going to use <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> as the malicious binary.
 
 ## What is Signature Based Detection?
@@ -59,7 +59,6 @@ What you want to do is split your binary by grabbing the first X bytes and see w
 head -c 180000 Mrdox.exe > test.exe
 ```
 ![No-detection](./no-detection.gif)
-
 
 Defender doesn't trigger. Let's change that to 181000 bytes instead:
 
