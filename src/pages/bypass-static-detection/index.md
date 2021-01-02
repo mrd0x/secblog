@@ -45,7 +45,7 @@ Detection rate dropped to 23
 
 We want to change the program as much as possible without changing the functionality. One thing you can do is find and replace all on variable names and function names. Look for 'malicious keywords' like Bruteforcer and replace that. Remove comments and modify text within print statements.
 
-![Find-and-replace-2](./find-and-replace-all-2.JPG)
+![Find-and-replace-2](./find-and-replace-all-2.png)
 
 The problem with this method is we are arbitrarily replacing words without knowing whether it'll have an effect or not. In the next section we'll try to pinpoint the signature.
 
