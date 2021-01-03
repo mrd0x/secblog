@@ -4,7 +4,7 @@ date: "2020-12-30"
 featuredImage: './featured.jpg'
 ---
 
-A Cyber Security Specialist and a Privacy enthusiast.<!-- end --> 
+A Cyber Security specialist and a privacy enthusiast.<!-- end --> 
 
 I created this blog to serve the following purposes:
 

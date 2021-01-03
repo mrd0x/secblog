@@ -1,10 +1,10 @@
 ---
 title: Process Injection 101
-date: "2020-12-30"
-featuredImage: './windows_arch.png'
+date: "2021-01-03"
+featuredImage: './function_flow.png'
 ---
 
-To build stealthy programs that hide in legitimate processes we must first understand the Windows architecture. In this blog post we explore what happens under the hood of user processes and applications.<!-- end -->
+In this blog post I go over the Windows architecture, what happens under the hood of user processes and applications and how to make your application more stealthy.<!-- end -->
 Windows is a complex piece of software that has many running parts and can be quite intimidating if you're just starting off. Although there are several resources online that explain everything in this post, I tried to break it down in a simplified yet effective manner. 
 
 # Windows Architecture
@@ -61,6 +61,6 @@ Direct syscalls are the most difficult to use because they will vary from OS ver
 # Additional Resources
 
 * <a href="https://posts.specterops.io/adventures-in-dynamic-evasion-1fe0bac57aa">Adventures in Dynamic Evasion</a>
-* <a href="/AV_artifacts.pdf">Hooked API Functions By AV Vendor</a>
+* <a href="https://github.com/D3VI5H4/Antivirus-Artifacts/blob/main/AntivirusArtifacts2.pdf">Hooked API Functions By AV Vendor</a>
 * <a href="https://i.blackhat.com/USA-19/Thursday/us-19-Kotler-Process-Injection-Techniques-Gotta-Catch-Them-All-wp.pdf">Windows Process Injection in 2019</a>
 * <a href ="https://www.ired.team/offensive-security/code-injection-process-injection">Injection Techniques</a>
