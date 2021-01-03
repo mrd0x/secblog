@@ -5,6 +5,7 @@ featuredImage: './function_flow.png'
 ---
 
 In this blog post I go over the Windows architecture, what happens under the hood of user processes and applications and how to make your application more stealthy.<!-- end -->
+
 Windows is a complex piece of software that has many running parts and can be quite intimidating if you're just starting off. Although there are several resources online that explain everything in this post, I tried to break it down in a simplified yet effective manner. 
 
 # Windows Architecture
@@ -20,15 +21,15 @@ A processor in a computer running Windows has two different modes: <i>User Mode<
 
 # Function Call Flow Example
 
-The following image shows an example of a C program that creates a file. Note that the image is simplified by skipping the runtime library call.
+The following image shows an example of a user application that creates a file. Note that the image is simplified by skipping the runtime library call.
 
 ![Function-Flow](./function_flow.png)
 
-It starts with C program calling a Windows API function <a href="https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea">CreateFile</a> which is available in the kernel32.dll. Kernel32.dll is a critical dll which is loaded in almost every process.
+It starts with user application calling a Windows API function <a href="https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea">CreateFile</a> which is available in the kernel32 DLL. Kernel32.dll is a critical DLL that exposes applications to the Windows API and is therefore loaded by most applications.
 
 Next, kernel32.dll calls the equivelant function to that of CreateFile in the Native API, <a href="https://docs.microsoft.com/en-us/windows/win32/api/winternl/nf-winternl-ntcreatefile">NtCreateFile</a>, which is provided by ntdll.dll.
 
-Ntdl.dll does a sysenter (x86) or syscall (x64) which does the jump to kernel mode. From there the kernel NtCreateFile function is made which calls kernel drivers and modules to complete the requested task.
+Ntdl.dll does an assembly sysenter (x86) or syscall (x64) whichs allows execution to jump to kernel mode. From there the kernel NtCreateFile function is made which calls kernel drivers and modules to complete the requested task.
 
 # What is Process Injection?
 
@@ -57,6 +58,10 @@ The Native API is more difficult to use because it is undocumented and functions
 ### Syscalls
 
 Direct syscalls are the most difficult to use because they will vary from OS version and therefore require additional work and customization for different versions. On the plus side they are undetectable since you make the call directly to the kernel without any intermediatery APIs. There are several tools that can make life easier when using syscalls such as <a href="https://github.com/jthuraisamy/SysWhispers">SysWhispers</a> and <a href="https://github.com/outflanknl/Dumpert">Dumpert</a>.
+
+# Final Note
+
+Having read this post thoroughly, you should now have a basic understanding of the Windows architecture, process injection and the programmitcal ways to go about process injection. Your next steps should be opening up Visual Studio and testing out the various injection techniques, using different functions from the Windows API and Native API, and if you're brave enough try direct syscalls. Don't stress too much if your executable is caught by AV, I'll be following up later with an article covering evasion techniques.
 
 # Additional Resources
 
