@@ -23,7 +23,7 @@ Rubeus binary after removing a random comment in the source code has 28 detectio
 If you look carefully you'd notice 2 differences.
 
 1.  The signature (hash) of the file changed
-2.  The detection rate went down which means some AV vendors simply created a signature of the the original binary and just blacklisted that.
+2.  The detection rate went down which means some AV vendors simply created a signature of the the original binary and blacklisted that.
 
 # Easy Wins
 
@@ -34,7 +34,7 @@ First thing's first, let's find and replace the term 'Rubeus' with a new word. I
 You also want to do the following:
 1.  Open up the .sln file with a text editor and replace all instances of Rubeus with your new word
 2.  Modify the 'Rubeus' folder names of the project and 'Rubeus.csproj' to your new word
-3.  Right click the project and select 'Properties' then replace all instances of 'Rubeus' to your new word
+3.  Right click the project in Visual Studio and select 'Properties' then replace all instances of 'Rubeus' to your new word
 4.  Compile and build as a x64 executable
 
 ![Rubeus-vt-3](./vt-rubeus-hash-3.png)
@@ -85,7 +85,7 @@ Still nothing... let's try 181500 bytes:
 
 ![Detection](./detection.gif)
 
-Great! Now we know that Defender is triggering somewhere between 181000 and 181500 bytes. Let's open the last file with HxD and check out the last 500 bytes.
+Great! Now we know that Defender is triggering somewhere between 181000 and 181500 bytes. Let's open the last file with <a href="https://mh-nexus.de/en/hxd/">HxD</a> and check out the last 500 bytes.
 
 ![Hxd-Analysis](./hxd-analysis.png)
 
