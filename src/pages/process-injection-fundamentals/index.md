@@ -25,7 +25,8 @@ The following image shows an example of a user application that creates a file. 
 
 ![Function-Flow](./function_flow.png)
 
-It starts with user application calling a Windows API function <a href="https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea">CreateFile</a> which is available in the kernel32 DLL. Kernel32.dll is a critical DLL that exposes applications to the Windows API and is therefore loaded by most applications.
+### Breakdown
+It starts with the user application calling a Windows API function <a href="https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea">CreateFile</a> which is available in the kernel32 DLL. Kernel32.dll is a critical DLL that exposes applications to the Windows API and is therefore loaded by most applications.
 
 Next, kernel32.dll calls the equivelant function to that of CreateFile in the Native API, <a href="https://docs.microsoft.com/en-us/windows/win32/api/winternl/nf-winternl-ntcreatefile">NtCreateFile</a>, which is provided by ntdll.dll.
 
@@ -33,13 +34,13 @@ Ntdl.dll does an assembly sysenter (x86) or syscall (x64) whichs allows executio
 
 # What is Process Injection?
 
-Process injection is a way of executing code inside a different process often times for either stealth & defense evasion or privilege escalation. Having an unknown process running on a machine might raise suspicion and can be easily detected by vigilant defenders. On the other hand injecting into a legitimate process makes it more difficult to detect by defender and security products due to execution being masked under a legitimate process.
+Process injection is a way of executing code inside a different process often times for either stealth & defense evasion or privilege escalation. Having an unknown process running on a machine might raise suspicion and can be easily detected by a vigilant user or security team. On the other hand injecting into a legitimate process makes it more difficult to detect by users and security products due to execution being masked under a legitimate process.
 
-There are many ways of process injection, some more stealthy than others. A classic example of process injection is shown in the image below.
+There are many ways of process injection, some stealthier than others. A classic example of process injection is shown in the image below.
 
 ![Process-Injection](./process_injection.png)
 
-I won't be getting into the specific injection techniques in this article since there are many resources that explain them in depth. I've included references to good write ups on all the various injection techniques at the end of this post.
+I won't be getting into the specific injection techniques in this article since there are many resources that explain them in depth. I've included references to write ups on most injection techniques at the end of this post.
 
 # Windows API, Native API and Syscalls
 
@@ -61,7 +62,7 @@ Direct syscalls are the most difficult to use because they will vary from OS ver
 
 # Final Note
 
-Having read this post thoroughly, you should now have a basic understanding of the Windows architecture, process injection and the programmitcal ways to go about process injection. Your next steps should be opening up Visual Studio and testing out the various injection techniques, using different functions from the Windows API and Native API, and if you're brave enough try direct syscalls. Don't stress too much if your executable is caught by AV, I'll be following up later with an article covering evasion techniques.
+Having read this post thoroughly, you should now have a basic understanding of the Windows architecture, process injection and the programmitcal ways to go about process injection. Your next step should be opening up Visual Studio and begin implementing and testing out the various injection techniques, using different functions from the Windows API and Native API, and if you're brave enough try direct syscalls. Don't stress too much if your executable is caught by AV, I'll be following up later with an article covering evasion techniques.
 
 # Additional Resources
 
