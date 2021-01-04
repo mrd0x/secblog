@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Red Team & Security Blog', // Required
+  title: 'Red Team & Security Notes', // Required
   author: 'mr.d0x', // Required
   description: 'C:\\Users\\mr.d0x>',
   whoami: 'whoami',

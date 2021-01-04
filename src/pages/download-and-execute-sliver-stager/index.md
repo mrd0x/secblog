@@ -3,12 +3,12 @@ title: Custom C Program to Download and Inject a Sliver Stager
 date: "2021-01-01"
 ---
 
-In this post we're going to create a C program that will download a stager and inject it in the process to establish communication with the attacker machine.<!-- end -->
-# Basics of Stager payloads
+We're going to create a C program that downloads a stager and injects it in the running process to establish communication with the attacker's machine.<!-- end -->
+# What are Stager payloads?
 
-Before starting we need to understand what stager payloads are. If you've used Metasploit Framework then you might've seen that word being thrown around but never really understood what it means. 
+If you've used the Metasploit Framework then you might've seen the word stager but never really understood what it is. 
 
-In simple terms a stager is reponsible for establishing commmunication with the attacker's machine and downloading and executing a larger payload called the Stage. You may ask why we don't simply download the Stage directly instead of having our stager download the stage. Well the reality is you won't always have the luxury of having unlimited memory space. If you've done challenging Buffer Overflow labs then you would've encountered limited buffer space to inject your payload. In cases like that you'd need a small payload to ultimately grab your large payload and do the damage.
+In simple terms a stager is reponsible for establishing commmunication with the attacker's machine and downloading and executing a larger payload called the Stage. You may ask why we don't simply download the Stage directly instead of having our stager download the stage. Well the reality is you won't always have the luxury of unlimited memory space. If you've done challenging Buffer Overflow labs then you would've encountered limited buffer space for your payload. In such cases you need a small payload to grab your large payload and do the damage.
 
 # Sliver C&C Framework
 

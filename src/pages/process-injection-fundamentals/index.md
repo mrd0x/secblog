@@ -4,7 +4,7 @@ date: "2021-01-03"
 featuredImage: './function_flow.png'
 ---
 
-In this blog post I go over the Windows architecture, what happens under the hood of user processes and applications and how to make your application more stealthy.<!-- end -->
+This post explains the Windows architecture, what happens under the hood of user processes and applications and how to make your application more stealthy.<!-- end -->
 
 Windows is a complex piece of software that has many running parts and can be quite intimidating if you're just starting off. Although there are several resources online that explain everything in this post, I tried to break it down in a simplified yet effective manner. 
 
@@ -17,7 +17,7 @@ A processor in a computer running Windows has two different modes: <i>User Mode<
 1. <b>User Processes</b> - A program/application executed by the user such as Notepad, Chrome and Word Doc.
 2. <b>Subsystem DLLs</b> - DLLs that contain API functions that user processes call. An example of this would be Notepad calling the CreateFile function implemented in kernel32.dll.
 3. <b>NTDL.DLL</b> - A system-wide DLL which is the lowest layer available in user mode. This is a special DLL that creates the transition from user mode to kernel mode.
-4. <b>Executive Kernel</b> - This is what we know as the Windows Kernel and it calls other drivers and modules available within kernel mode to compelete tasks.
+4. <b>Executive Kernel</b> - This is what we know as the Windows Kernel and it calls other drivers and modules available within kernel mode to complete tasks.
 
 # Function Call Flow Example
 

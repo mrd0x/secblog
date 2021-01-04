@@ -4,13 +4,13 @@ date: "2021-01-02"
 featuredImage: './defender.png'
 ---
 
-In this post I explain how to bypass Windows Defender's signature based detection of malicious binaries with a practical example. I'll be using Rubeus as the malicious binary. <!-- end -->
+In this post I demonstrate a practical example of bypassing Windows Defender's signature detection by modifying the source code of Rubeus<!-- end -->
 
 # What is Signature Based Detection?
 
-Before starting we need to understand what signature based detection is and how antivirus agents use this method to catch malicious binaries. An antivirus signature is a continuous sequence of bytes within a malicious binary that uniquely identifies it. Files on your machine are scanned and compared against the a signature database and if there is a match then that file is quarantined and removed off the machine.
+Before starting we need to understand what signature based detection is and how antivirus agents use it to catch malicious binaries. An antivirus signature is a continuous sequence of bytes within a malicious binary that uniquely identifies it. Files on your machine are scanned and compared against the a signature database and if there is a match then that file is quarantined and removed off the machine.
 
-If you upload <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> to VirusTotal you can see the hash of the file. This hash can be used as a signature to uniquely identify the file, although most antivirus agents will probably create multiple signatures of the file by taking excerpts of the source code.
+If you compile <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> and upload the binary to VirusTotal a hash of the file will be generated. This hash can be used as a signature to uniquely identify the file, although most antivirus agents will create additional signatures of the file by taking excerpts of the source code.
 
 ![Rubeus-vt](./vt-rubeus-hash.png)
 Rubeus binary with no modifications has 31 detections
@@ -20,10 +20,10 @@ What happens if we remove a single comment from the source code?
 ![Rubeus-vt-2](./vt-rubeus-hash-2.png)
 Rubeus binary after removing a random comment in the source code has 28 detections
 
-If you look carefully you'd notice 2 differences.
+If you look carefully you'll notice 2 differences.
 
 1.  The signature (hash) of the file changed
-2.  The detection rate went down which means some AV vendors simply created a signature of the the original binary and blacklisted that.
+2.  The detection rate went down. This means some AV vendors only used the hash of the file for signature detection
 
 # Easy Wins
 
