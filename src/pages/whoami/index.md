@@ -6,7 +6,7 @@ featuredImage: './featured.jpg'
 
 A Cyber Security specialist and a privacy enthusiast.<!-- end --> 
 
-I've always been in the habit of creating personal notes and I decided to begin sharing them in hopes of:
+I've always been in the habit of creating personal notes and I decided to start sharing them in hopes of:
 
 1.  Providing <i>potentially</i> useful techniques that may assist others during penetration tests/red team engagements
 2.  Explaining complex concepts in a simplified and causal way

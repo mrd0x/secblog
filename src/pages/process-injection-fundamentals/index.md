@@ -4,9 +4,9 @@ date: "2021-01-03"
 featuredImage: './function_flow.png'
 ---
 
-This post explains the Windows architecture, what happens under the hood of user processes and applications and how to make your application more stealthy.<!-- end -->
+This post will help build foundational knowledge required to perform process injection<!-- end -->.
 
-Windows is a complex piece of software that has many running parts and can be quite intimidating if you're just starting off. Although there are several resources online that explain everything in this post, I tried to break it down in a simplified yet effective manner. 
+Windows is a complex piece of software that has many running parts and can be quite intimidating if you're just starting off. Although there are several resources online that explain everything in this post, I tried to break it down in a simplified yet effective manner.
 
 # Windows Architecture
 
@@ -62,7 +62,7 @@ Direct syscalls are the most difficult to use because they will vary from OS ver
 
 # Final Note
 
-Having read this post thoroughly, you should now have a basic understanding of the Windows architecture, process injection and the programmitcal ways to go about process injection. Your next step should be opening up Visual Studio and begin implementing and testing out the various injection techniques, using different functions from the Windows API and Native API, and if you're brave enough try direct syscalls. Don't stress too much if your executable is caught by AV, I'll be following up later with an article covering evasion techniques.
+Having read this post thoroughly, you should now have a basic understanding of the Windows architecture, process injection and the programmitcal ways to go about process injection. Your next step should be opening up Visual Studio and begin implementing and testing out the various injection techniques. Use different functions from the Windows API and Native API and if you're brave enough try direct syscalls. Don't stress too much if your executable is caught by AV, I'll be covering evasion techniques in a future post.
 
 # Additional Resources
 

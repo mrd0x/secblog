@@ -3,7 +3,8 @@ title: Custom C Program to Download and Inject a Sliver Stager
 date: "2021-01-01"
 ---
 
-We're going to create a C program that downloads a stager and injects it in the running process to establish communication with the attacker's machine.<!-- end -->
+We're going to create a C program that downloads a stager and injects it in the running process to establish communication with the attacker's machine<!-- end -->.
+
 # What are Stager payloads?
 
 If you've used the Metasploit Framework then you might've seen the word stager but never really understood what it is. 

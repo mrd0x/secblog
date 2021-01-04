@@ -4,23 +4,23 @@ date: "2021-01-02"
 featuredImage: './defender.png'
 ---
 
-In this post I demonstrate a practical example of bypassing Windows Defender's signature detection by modifying the source code of Rubeus<!-- end -->
+A practical example of bypassing Windows Defender's signature detection by modifying source code<!-- end -->. I'll be using <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> as my malicious binary and I suggest you clone it and follow along to better your understanding.
 
 # What is Signature Based Detection?
 
 Before starting we need to understand what signature based detection is and how antivirus agents use it to catch malicious binaries. An antivirus signature is a continuous sequence of bytes within a malicious binary that uniquely identifies it. Files on your machine are scanned and compared against the a signature database and if there is a match then that file is quarantined and removed off the machine.
 
-If you compile <a href="https://github.com/GhostPack/Rubeus">Rubeus</a> and upload the binary to VirusTotal a hash of the file will be generated. This hash can be used as a signature to uniquely identify the file, although most antivirus agents will create additional signatures of the file by taking excerpts of the source code.
+If you compile Rubeus and upload the binary to VirusTotal a hash of the file will be generated. This hash can be used as a signature to uniquely identify the file, although most antivirus agents will create additional signatures of the file by taking excerpts of the source code.
 
 ![Rubeus-vt](./vt-rubeus-hash.png)
-Rubeus binary with no modifications has 31 detections
+Rubeus binary with no modifications
 
 What happens if we remove a single comment from the source code?
 
 ![Rubeus-vt-2](./vt-rubeus-hash-2.png)
-Rubeus binary after removing a random comment in the source code has 28 detections
+Rubeus binary after removing a random comment in the source code 
 
-If you look carefully you'll notice 2 differences.
+You should notice 2 differences.
 
 1.  The signature (hash) of the file changed
 2.  The detection rate went down. This means some AV vendors only used the hash of the file for signature detection
