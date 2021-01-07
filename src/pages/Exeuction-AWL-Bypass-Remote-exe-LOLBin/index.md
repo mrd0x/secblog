@@ -3,7 +3,7 @@ title: Execution and AWL Bypass Using LOLBin Remote.exe
 date: "2021-01-05"
 ---
 
-Masquerading execution behind the Microsoft signed binary remote.exe<!-- end-->.
+Masquerading execution behind the Microsoft signed binary remote.exe<!-- end -->.
 
 If you're not familiar with the term LOLBins by now, you'd better catch up to speed because that's the trend for the foreseeable future. Briefly explained, "LOLBins" or "Living Off the Land Binaries" are non-malicious binaries that can be used in an unintended way to aid attackers in evading defenses. A more thorough explanation can be found <a href="https://blog.teamascend.com/lolbins">here</a>.
 
