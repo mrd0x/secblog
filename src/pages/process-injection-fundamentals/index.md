@@ -62,7 +62,7 @@ Direct syscalls are the most difficult to use because they will vary from OS ver
 
 # Final Note
 
-Having read this post thoroughly, you should now have a basic understanding of the Windows architecture, process injection and the programmitcal ways to go about process injection. Your next step should be opening up Visual Studio and begin implementing and testing out the various injection techniques. Use different functions from the Windows API and Native API and if you're brave enough try direct syscalls. Don't stress too much if your executable is caught by AV, I'll be covering evasion techniques in a future post.
+Having read this post thoroughly, you should now have a basic understanding of the Windows architecture, process injection and the programmitcal ways to go about process injection. Your next step should be opening up Visual Studio to begin implementing and testing the various injection techniques. Use different functions from the Windows API and Native API and if you're brave enough try direct syscalls. Don't stress too much if your executable is caught by AV, I'll be covering evasion techniques in a future post.
 
 # Additional Resources
 
