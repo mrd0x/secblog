@@ -1,6 +1,6 @@
 ---
 title: Execution and AWL Bypass Using LOLBin Remote.exe
-date: "2021-01-05"
+date: "2021-01-07"
 ---
 
 Masquerading execution behind the Microsoft signed binary remote.exe<!-- end -->.
