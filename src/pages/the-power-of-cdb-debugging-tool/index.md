@@ -104,7 +104,7 @@ Again, attach cdb to any process.
 
 Use .shell to run a shell command.
 
-    .shell hostname
+    .shell ping 127.0.0.1
 
 ![Shell-Cmd](./shell_command.png)
 
@@ -119,7 +119,7 @@ Have you ever tried to stop a security solution? If you did then you probably go
 
 ![Access-Denied](./access_denied.png)
 
-How can cdb help? If you can get cdb to attach to a process then you can cause it to terminate. I used this unorthodox technique against an application whitelisting tool that shall remain unnamed. It caused the process to terminate and gave me a window of about 30 seconds to run any executable I want, until it started back up again.
+How can cdb help? If you can get cdb to attach to a process then you can cause it to terminate. I used this unorthodox technique against an application whitelisting tool that shall remain unnamed. It caused the process to terminate which gave me a window of about 30 seconds to run any executable I wanted.
 
     #Run this as administrator
     #If you don't get 'Access denied' then just press 'q'
