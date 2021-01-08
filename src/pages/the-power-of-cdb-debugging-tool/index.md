@@ -80,7 +80,7 @@ Looking at Process Hacker we see cdb spawning the executable as a child process.
 
 ## Detaching The Executable
 
-You can also hit CTRL+C then 'q' in the cdb console and it'll exit cdb without impacting the executable or the process it's attached to, thanks to the -pd flag. The downside of doing that is losing cdb as the parent process.
+You can also hit CTRL+C then 'q' in the cdb console to exit cdb without impacting the executable or the process it's attached to, thanks to the -pd flag. The downside of doing that is losing cdb as the parent process.
 
 ![No-Parent](./no_parent.png)
 
