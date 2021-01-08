@@ -98,7 +98,7 @@ Then use the .load command and specify the full path to your DLL.
 
 ![DLL-Injection](./dll_injection.gif)
 
-If we look at the DLLs loaded by cdb we see our inject DLL, d32lib.dll.
+If we look at the DLLs loaded by cdb we see our injected DLL, d32lib.dll.
 
 ![Cdb-DLLs](./dll_cdb.png)
 
