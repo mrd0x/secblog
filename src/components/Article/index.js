@@ -9,6 +9,7 @@ const Article = styled.article`
     color: ${userConfig.primaryColor};
     font-weight: 700;
     text-decoration: none;
+    overflow-wrap: break-word;
 
     &:hover {
       text-decoration: underline;
