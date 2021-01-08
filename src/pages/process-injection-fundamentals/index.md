@@ -54,7 +54,7 @@ The Windows API is the easiest way and the least stealthy way of injecting into 
 
 ### Native API
 
-The Native API is more difficult to use because it is undocumented and functions can change at anytime without any warning from Microsoft. The Windows API acts as a wrapper to the Native API and technically should not be used directly. Therefore when we skip the Windows API and use the Native API directly it can slip past some AVs/EDRs but not always. EDRs still hook certain Native API calls that have been misused in the past by malware. A few example of commonly monitored functions are NtCreateThreadEx, NtCreateProcess and NtWriteVirtualMemory.
+The Native API is more difficult to use because it is undocumented and functions can change at anytime without any warning from Microsoft. The Windows API acts as a wrapper to the Native API and technically should not be used directly. Therefore when we skip the Windows API and use the Native API directly it can slip past some AVs/EDRs but not always. EDRs still hook certain Native API calls that have been misused by malware in the past. A few example of commonly monitored functions are NtCreateThreadEx, NtCreateProcess and NtWriteVirtualMemory.
 
 ### Syscalls
 
