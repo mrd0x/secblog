@@ -17,11 +17,15 @@ I personally feel cdb doesn't get the credit it deserves, I mean it has <i>a lot
 
 # Running Shellcode
 
-Exploit Monday released a great <a href="http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html">article</a> in 2016 showing how to use cdb.exe to run shellcode and bypass application whitelisting.
+Exploit Monday released a great <a href="http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html">article</a> in 2016 showing how to use cdb.exe to run shellcode and bypass application whitelisting. Essentially what you do is:
+
+1. Allocate RWX memory
+2. Copy the shellcode to the allocated buffer
+3. Run it
+
+There's nothing difficult about it but I felt as though the unusual shellcode syntax may have scared off some people from trying this technique as it looks quite intimidating at first glance. Let's see how to convert to regular shellcode to the one used by cdb.
 
 ## Converting the Shellcode
-
-I felt as though the unusual shellcode syntax may have scared off some people from trying this technique as it looks quite intimidating at first glance. Let's see how to convert to the shellcode used in the article.
 
     #Input
     \x6a
@@ -34,7 +38,7 @@ I felt as though the unusual shellcode syntax may have scared off some people fr
     #Output
     ;eb @$t0+00 6A
 
-It's that easy! It's also great at evading AV scanning due to the unusual format. If you're lazy like me and don't want to write a script then you're in luck, here's a usable <a href="https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py">script</a> I found online.
+It's that easy! It's also great at evading AV detection due to its unusual format. If you're lazy like me and don't want to write a script then you're in luck, here's a usable <a href="https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py">script</a> I found online.
 
 ## Example
 

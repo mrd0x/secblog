@@ -58,7 +58,7 @@ The Native API is more difficult to use because it is undocumented and functions
 
 ### Syscalls
 
-Direct syscalls are the most difficult to use because they will vary from OS version and therefore require additional work and customization for different versions. On the plus side they are undetectable since you make the call directly to the kernel without any intermediatery APIs. There are several tools that can make life easier when using syscalls such as <a href="https://github.com/jthuraisamy/SysWhispers">SysWhispers</a> and <a href="https://github.com/outflanknl/Dumpert">Dumpert</a>.
+Direct syscalls are the most difficult to use because they will vary between OS versions and therefore require additional work and customization for different versions. On the plus side they are undetectable since you make the call directly to the kernel without any intermediatery APIs. There are several tools that can make life easier when using syscalls such as <a href="https://github.com/jthuraisamy/SysWhispers">SysWhispers</a> and <a href="https://github.com/outflanknl/Dumpert">Dumpert</a>.
 
 # Final Note
 
