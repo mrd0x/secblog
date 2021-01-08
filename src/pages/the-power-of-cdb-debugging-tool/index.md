@@ -29,12 +29,12 @@ I felt as though the unusual shellcode syntax may have scared off some people fr
     #Conversion formula
     #Strip '\x' and convert shellcode to uppercase
     #hex_counter starts at 00
-    ";eb @$t0+" + hex_counter + " " + upper(stripped(shellcode))
+    ";eb @$t0+" + hex_counter + " " + upper(strip(shellcode))
 
     #Output
     ;eb @$t0+00 6A
 
-It's that easy! It's also extremely useful in evading AV scanning your file due to the unusual format. If you're lazy like me and don't want to write a script then you're in luck, here's a usable <a href="https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py">script</a> I found online.
+It's that easy! It's also great at evading AV scanning due to the unusual format. If you're lazy like me and don't want to write a script then you're in luck, here's a usable <a href="https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py">script</a> I found online.
 
 ## Example
 
