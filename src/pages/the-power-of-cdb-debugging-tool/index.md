@@ -23,14 +23,14 @@ Exploit Monday released a great <a href="http://www.exploit-monday.com/2016/08/w
 2. Copy the shellcode to the allocated buffer
 3. Run it
 
-There's nothing difficult about it but I felt as though the unusual shellcode syntax may have scared off some people from trying this technique as it looks quite intimidating at first glance. Let's see how to convert to regular shellcode to the one used by cdb.
+There's nothing difficult about it but I felt as though the unusual shellcode syntax used by cdb may have scared off some people from trying this technique as it looks quite intimidating at first glance. Let's see how to convert regular shellcode to the one used by cdb.
 
 ## Converting the Shellcode
 
     #Input
     \x6a
 
-    #Conversion formula
+    #Conversion
     #Strip '\x' and convert shellcode to uppercase
     #hex_counter starts at 00
     ";eb @$t0+" + hex_counter + " " + upper(strip(shellcode))
