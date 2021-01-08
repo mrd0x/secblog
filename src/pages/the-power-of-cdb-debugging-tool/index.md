@@ -17,11 +17,11 @@ I personally feel cdb doesn't get the credit it deserves, I mean it has <i>a lot
 
 # Running Shellcode
 
-Exploit Monday released a great <a href="http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html">article</a> in 2016 showing how to use cdb.exe to run shellcode and bypass application whitelisting. Essentially what you do is:
+Exploit Monday released a great <a href="http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html">article</a> in 2016 showing how to use cdb.exe to run shellcode and bypass application whitelisting. I highly recommend you check it out before continuing along. Essentially what you're doing is:
 
-1. Allocate RWX memory
-2. Copy the shellcode to the allocated buffer
-3. Run it
+1. Allocating RWX memory
+2. Copying the shellcode to the allocated buffer
+3. Executing the shellcode
 
 There's nothing difficult about it but I felt as though the unusual shellcode syntax used by cdb may have scared off some people from trying this technique as it looks quite intimidating at first glance. Let's see how to convert regular shellcode to the one used by cdb.
 
