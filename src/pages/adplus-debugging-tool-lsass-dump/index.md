@@ -1,13 +1,13 @@
 ---
-title: Dump LSASS With Adplus Debugging Tool
+title: Dumping LSASS With Adplus Debugging Tool
 date: "2021-01-09"
 ---
 
-A continuation of my series into abusing Microsoft's debugging tools for red teams. This time I show how to create a LSASS dump with the Adplus debugging tool<!-- end -->. You may want to check my earlier posts that cover <a href="https://blog.thecybersecuritytutor.com/the-power-of-cdb-debugging-tool/">cdb.exe</a> and <a href="https://blog.thecybersecuritytutor.com/Exeuction-AWL-Bypass-Remote-exe-LOLBin/">remote.exe</a>.
+A continuation of my series into abusing Microsoft's debugging tools for red teams. This time I show how to create a memory dump of LSASS with the Adplus debugging tool<!-- end -->. You may want to check my earlier posts that cover <a href="https://blog.thecybersecuritytutor.com/the-power-of-cdb-debugging-tool/">cdb.exe</a> and <a href="https://blog.thecybersecuritytutor.com/Exeuction-AWL-Bypass-Remote-exe-LOLBin/">remote.exe</a> debugging tools.
 
 # Introduction
 
-Creating <a href="https://attack.mitre.org/techniques/T1003/">memory dumps (T1003)</a> is a widely used technique by attackers to retrieve credentials on a system. Although there have been improvements by Microsoft to reduce the impact of this technique (e.g. disabling WDigest and introducing Credential Guard), it's still used during penetration tests and red team engagements.
+Dumping memory in search of credentials <a href="https://attack.mitre.org/techniques/T1003/">(T1003)</a> is a widely used technique by attackers. Although there have been improvements by Microsoft to reduce the impact of this technique (e.g. disabling WDigest and introducing Credential Guard), it's still used during penetration tests and red team engagements.
 
 The most common way to create a memory dump is with the Windows Sysinternals tool, Procdump. Any half decent AV will now delete your dump file as soon as it's generated. Adplus has the advantage of not being as widely used and therefore it may slip past some AVs. 
 
@@ -17,13 +17,13 @@ The Windows debugging tools come with <b>adplus.exe</b> and <b>adplus_old.vbs</b
 
 ## Required Privileges
 
-I tested this out with administrator privileges and it wasn't creating the dump file. As it turns out you need SYSTEM privileges to create the dump file. If you have administrator privileges it shouldn't be that hard to find a way to SYSTEM so I'll leave that up to you to figure out.
+I tried using Adplus to dump LSASS with administrator privileges and it wasn't creating the dump file. As it turns out you need SYSTEM privileges to create the dump file. If you have administrator privileges it shouldn't be that hard to find a way to SYSTEM so I'll leave that up to you to figure out.
 
 ## Creating a memory dump
 
 Its quite simple to create a memory dump, run the following command.
 
-    #Exe
+    #Executable file
     adplus.exe -hang -pn lsass.exe -o c:\users\mr.d0x\output\folder -quiet
     
     #Vbs script
