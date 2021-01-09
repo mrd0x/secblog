@@ -132,10 +132,15 @@ How can cdb help? If you can get cdb to attach to a process then you can cause i
     #The attached process will then terminate
     cdb.exe -p <PID>
 
+
+# Final Remarks
+
+Cdb may come in handy during some engagements so it's best to have the executable in your toolset. As for defenders, Microsoft <a href ="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules">recommends cdb to be blocked</a> from running and whitelisting it for specific users when it's explicity needed.
+
 # References
 
 * http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
-* https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/
+* https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py
 * https://fortynorthsecurity.com/blog/how-to-bypass-wdac-with-dbgsrv-exe/
 
 # Acknowledgement
