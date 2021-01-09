@@ -45,4 +45,4 @@ If that doesn't work then use the ```-r``` flag which creates a dump file every 
 
 ## Issues
 
-One issue I ran into after using Adplus is the lsass process remaining suspended. This causes all sorts of problems and will eventually require a system reboot. If anyone knows how to resume the process after Adplus executes please DM me on Twitter. 
+One issue I ran into after running Adplus is the lsass process remained suspended. This causes all sorts of problems and will eventually require a system reboot. If anyone knows how to resume the process after executing Adplus please DM me on Twitter. 
