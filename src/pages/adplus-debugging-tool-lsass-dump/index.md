@@ -7,7 +7,7 @@ A continuation of my series into abusing Microsoft's debugging tools for red tea
 
 # Introduction
 
-Dumping memory in search of credentials <a href="https://attack.mitre.org/techniques/T1003/">(T1003)</a> is a widely used technique by attackers. Although there have been improvements by Microsoft to reduce the impact of this technique (e.g. disabling WDigest and introducing Credential Guard), it's still used during penetration tests and red team engagements.
+Dumping memory in search of credentials <a href="https://attack.mitre.org/techniques/T1003/">(T1003)</a> is a widely used technique by attackers. Microsoft has made some improvements to reduce the effectiveness of this technique such as the introduction of Credential Guard. 
 
 The most common way to create a memory dump is with the Windows Sysinternals tool, Procdump. Any half decent AV will now delete your dump file as soon as it's generated. Adplus has the advantage of not being as widely used and therefore it may slip past some AVs. 
 
