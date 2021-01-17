@@ -81,7 +81,7 @@ If you have Administrator privileges you can try to avoid McAfee products by uni
 
 ## McAfee Agent
 
-The McAfee Agent is responsible for various tasks, one of which is sending security logs to the centralized security management server known as ePO. To prevent the agent from sending logs to the server you can uninstall it. If tamper protection is enabled then this will fail, in that case you can try to switch the agent to 'unmanaged mode' which will also stop the machine from sending logs.
+The McAfee Agent is responsible for various tasks, one of which is sending security logs to the centralized security management server known as ePO. To prevent the agent from sending logs to the server you can uninstall it. If tamper protection is enabled then this will fail, in that case you can try to switch the agent to 'unmanaged mode' which will also stop the agent from sending logs.
 
     #Remove Agent
     cd c:\Program Files\McAfee\Agent\x86

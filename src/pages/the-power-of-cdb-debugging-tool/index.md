@@ -62,10 +62,10 @@ Notepad won't appear to the user but it is running in the background. The notepa
 
 # Launching an Executable
 
-You can use cdb to spawn an executable as a child process. You'll need to attach cbd to a running process, I'll be using notepad.
+You can use cdb to spawn an executable as a child process. You'll need to attach cdb to any running process, I'll be using notepad.
 
-    #use -p to specify PID instead
-    cdb.exe -pd -pn notepad.exe -a "c:\users\mr.d0x\desktop\out.exe"
+    #you can use -p to specify PID instead
+    cdb.exe -pd -pn notepad.exe -a "c:\users\mr.d0x\desktop\evil.exe"
 
     #When it hits any breakpoint press 'g'
     ntdll!DbgBreakPoint:

