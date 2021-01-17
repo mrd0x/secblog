@@ -12,11 +12,10 @@ While conducting a penetration test I happen to run into McAfee and wanted to se
 
 Before I start I want to briefly go over how McAfee works for anyone who hasn't encountered it before. McAfee has various independent products/components that can be purchased by enterprises. Enterprises will purchase different products depending on their needs. Some of Mcafee's products you may encounter are:
 
-* McAfee Agent
 * McAfee Endpoint Security (ENS)
+* McAfee Host Intrusion Prevention (HIP)
 * McAfee EndPoint Security Web Control
 * McAfee VirusScan Enterprise
-* McAfee Host Intrusion Prevention (HIP)
 
 The full list of McAfee products is available <a href="https://www.mcafee.com/enterprise/en-ca/products/a-z.html">here</a>. 
 
