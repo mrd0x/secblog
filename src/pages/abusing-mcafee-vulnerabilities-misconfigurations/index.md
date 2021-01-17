@@ -45,15 +45,14 @@ If for some reason you weren't able to find anything, the exclusions list is ava
     C:\ProgramData\McAfee\Endpoint Security\McAfeeSettingsBackup\*.reg
 
 
-## On-Demand Scans
+## On-Demand Scan Exclusions
 
 The aforementioned technique only covers OAS and therefore if the machine is scanned with an On-Demand Scan (ODS) then your files may be detected and deleted. If you want the exclusions list for ODS check the following registry key.
 
     
     reg query HKLM\SOFTWARE\McAfee\AVSolution\ODS\541* /v exclusions
 
-\* 541 may be a different number on your target machine 
-
+\* 541 may be a different number on your target machine
 
 # Method 2 - ENS Disabled AMSI
 
