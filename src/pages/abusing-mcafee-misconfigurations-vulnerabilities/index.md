@@ -1,12 +1,12 @@
 ---
-title: Abusing McAfee Misconfigurations & Vulnerabilities
+title: McAfee Misconfigurations & Vulnerabilities
 date: "2021-01-17"
 featuredImage: './mcafee-logo.png'
 ---
 
-Unpatched or misconfigured McAfee components will make life much easier during a penetration test or red team assessment.<!-- end -->. 
+Unpatched or misconfigured McAfee components will make life much easier during a penetration test or red team assessment<!-- end -->. 
 
-While conducting a penetration test I happen to run into McAfee and wanted to see if there are any articles on bypassing or abusing McAfee. I started doing some research and unfortunately I was unable to find any well documented modern techniques on doing so. I decided to create a list of methods that I discovered during my engagement that I found very useful.
+While conducting a penetration test I happen to run into McAfee and wanted to see if there are any articles on bypassing or abusing McAfee. I started doing some research and unfortunately I was unable to find any well documented modern techniques on doing so. I decided to write up on a few methods that I discovered during my assessment which I found very useful.
 
 # McAfee Products
 
@@ -20,9 +20,7 @@ Before I start I want to briefly go over how McAfee works for anyone who hasn't 
 
 The full list of McAfee products is available <a href="https://www.mcafee.com/enterprise/en-ca/products/a-z.html">here</a>. 
 
-# Method 1 - Folder & File Exclusions
-
-ENS is the component responsible for scanning files.
+# Method 1 - ENS Folder & File Exclusions
 
 ## On-Access Scan Exclusions
 
@@ -42,7 +40,7 @@ Query the following registry keys and check the file & folder names under the 'e
     reg query HKLM\SOFTWARE\McAfee\AVSolution\OAS\OAS_EMAIL_ATTACHMENTS /v exclusions
 
 
-If for some reason you weren't able to find anything, they're also available as a file format in the following paths:
+If for some reason you weren't able to find anything, the exclusions list is available in the following paths:
 
     C:\ProgramData\McAfee\Endpoint Security\McAfeeSettingsBackup\*.xml
     C:\ProgramData\McAfee\Endpoint Security\McAfeeSettingsBackup\*.reg
@@ -50,7 +48,7 @@ If for some reason you weren't able to find anything, they're also available as 
 
 ## On-Demand Scans
 
-The aforementioned technique only covers On-Access Scan and therefore if the machine is scanned with an On-Demand Scan (ODS) then your files may be detected and deleted. If you want the exclusions list for ODS check the following registry key.
+The aforementioned technique only covers OAS and therefore if the machine is scanned with an On-Demand Scan (ODS) then your files may be detected and deleted. If you want the exclusions list for ODS check the following registry key.
 
     
     reg query HKLM\SOFTWARE\McAfee\AVSolution\ODS\541* /v exclusions
