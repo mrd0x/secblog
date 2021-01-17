@@ -1,5 +1,5 @@
 ---
-title: McAfee Misconfigurations & Vulnerabilities
+title: Abusing McAfee Misconfigurations & Vulnerabilities
 date: "2021-01-17"
 featuredImage: './mcafee-logo.png'
 ---
