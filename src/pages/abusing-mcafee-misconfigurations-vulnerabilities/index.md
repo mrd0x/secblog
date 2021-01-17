@@ -6,7 +6,7 @@ featuredImage: './mcafee-logo.png'
 
 Unpatched or misconfigured McAfee components will make life much easier during a penetration test or red team assessment<!-- end -->. 
 
-While conducting a penetration test I happen to run into McAfee and wanted to see if there are any articles on bypassing or abusing McAfee. I started doing some research and unfortunately I was unable to find any well documented modern techniques on doing so. I decided to write up on a few methods that I discovered during my assessment which I found very useful.
+While conducting a penetration test I happen to run into McAfee and wanted to see if there are any articles on bypassing or abusing McAfee. I started doing some research and unfortunately I was unable to find any well documented modern techniques on doing so. I decided to write this article to mention a few methods that I discovered during my assessment which I found very useful.
 
 # McAfee Products
 
