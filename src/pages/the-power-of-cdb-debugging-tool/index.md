@@ -62,7 +62,7 @@ Notepad won't appear to the user but it is running in the background. The notepa
 
 # Launching an Executable
 
-You can use cdb to spawn an executable as a child process. You'll need to attach cdb to any running process, I'll be using notepad.
+You can use cdb to spawn an executable as a child process. You'll need to attach cdb to any running process to be able to run your executable, I'll be using notepad.
 
     #you can use -p to specify PID instead
     cdb.exe -pd -pn notepad.exe -a "c:\users\mr.d0x\desktop\out.exe"
@@ -86,7 +86,7 @@ You can also hit CTRL+C then 'q' in the cdb console to exit cdb without impactin
 
 # Running a DLL
 
-You can use cdb to load a DLL. The DLL is loaded inside cdb not the attached process. The downside of this technique is it won't work if you don't have the rest of the debugger tools because it requires additional DLLs that are located inside the directory.
+You can use cdb to load a DLL. The DLL is loaded inside cdb not the attached process. The downside of this technique is it won't work if you don't have the rest of the debugger tools because cdb requires additional DLLs that are located inside the directory.
 
 To execute a DLL, first attach cdb to any process.
 
