@@ -164,6 +164,8 @@ And the results were:
 
 ![Crashed](./crashed.png)
 
+This will crash both Skype on web and Skype's thick client. However the Skype app on the phone does not crash.
+
 # Spear Phishing With Skype's Domain
 
 I found this one pretty interesting. When you send a file to a chat it's first uploaded to Skype's servers and then everyone inside the chat gets access to the file. **It doesn't matter if you're friends with the target(s) or not**. After sending the file, you can delete your message and they still have access to the file.
@@ -229,7 +231,7 @@ Host: azwus1-client-s.gateway.messenger.live.com
 
 ![Fake-Meeting](./fake_meeting.png)
 
-One thing to note is your real domain will show up if the user hovers over. One effective way to obfuscate it is to create a long subdomain with benign words and add a benign looking path. You can be more creative of course, this is merely a suggestion.
+One thing to note is your real domain will show up if the user hovers over. Again, be creative and add a realistic subdomain with a realistic looking path and you should be fine.
 
 ![Long-Subdomain](./long_subdomain.png)
 
