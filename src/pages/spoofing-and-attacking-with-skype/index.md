@@ -1,6 +1,7 @@
 ---
 title: Spoofing and Attacking With Skype
 date: "2021-01-30"
+featuredImage: './skype-logo.png'
 ---
 
 Skype is plagued with spoofing vulnerabilities that Microsoft did not think need 'immediate security servicing'<!-- end -->.
@@ -58,12 +59,12 @@ Step 3: Insert your link in the 'href' attribute and in 'key' (in the urlpreview
 ...
 "content":"<a href=\"https://evil.com\">https://google.com</a>",
 ...
-"urlpreviews":"[{\"key\":\"https://evil.com\",
+"urlpreviews":"[{\"key\":\"https://evil.com\",...
 ```
 
 ![Spoofed-Url](./spoofed_url.png)
 
-This is quite noticeable, to get past that just create a realistic subdomain. Example: **google.image.view.evil[.]com**
+The fake URL is very noticeable, to get past that just create a realistic subdomain. Example: **google.image.view.evil.com**
 
 ![Realistic-Spoofed-Url](./realistic_spoofed_url.png)
 
