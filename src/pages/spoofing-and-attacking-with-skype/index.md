@@ -14,8 +14,6 @@ It was another day of bug bounty hunting, the domain being tested is <b>web.skyp
 
 There's quite a bit of interesting things I discovered so feel free to jump to whatever section you like.
 
-Note: Not all vulnerabilities affect every Skype client.
-
 * **Spoofing Links** - Affects web, mobile and thick clients
 * **Spoofing File Names** - Affects web and mobile clients
 * **Spoofing File Size** - Affects web, mobile and thick clients
@@ -28,7 +26,7 @@ Note: Not all vulnerabilities affect every Skype client.
 
 I found this one to be pretty effective if you want to get someone to visit a link. Let's see how it's done.
 
-Step 1: Send the link you want to masquerade
+Step 1: Send the link you want to masquerade as
 
 ![Url](./url.png)
 
@@ -64,7 +62,7 @@ Step 3: Insert your link in the 'href' attribute and in 'key' (in the urlpreview
 
 ![Spoofed-Url](./spoofed_url.png)
 
-The fake URL is very noticeable, to get past that just create a realistic subdomain. Example: **google.image.view.evil.com**
+The spoofed URL is shown at the bottom of the message. To get past that just create a realistic subdomain. Example: **google.image.view.evil.com**
 
 ![Realistic-Spoofed-Url](./realistic_spoofed_url.png)
 
@@ -168,15 +166,15 @@ This will crash both Skype on web and Skype's thick client. However the Skype ap
 
 # Spear Phishing With Skype's Domain
 
-I found this one pretty interesting. When you send a file to a chat it's first uploaded to Skype's servers and then everyone inside the chat gets access to the file. **It doesn't matter if you're friends with the target(s) or not**. After sending the file, you can delete your message and they still have access to the file.
+I found this one pretty interesting. When you send a file to a chat it's first uploaded to Skype's servers and then everyone inside the chat gets access to the file. **It doesn't matter whether you're friends with the target(s) or not**. After sending the file, you can delete it and everyone retains access to the file.
 
 The file's link can now be emailed to the target and if they have an active session on their Outlook/O365 account then the link allows them to download the file.
 
-Step 1: Send or forward a file to the target user, ignore the error you get
+Step 1: Send or forward a file to the target user, ignore the error notification
 
 ![Error](./send_error.png)
 
-Step 2: Intercept the request until you hit this request
+Step 2: Intercept the request and forward until you see this request
 
 ```
 POST /v1/users/ME/conversations/19%REDACTED%40thread.skype/messages?x-ecs-etag= HTTP/1.1
@@ -237,4 +235,4 @@ One thing to note is your real domain will show up if the user hovers over. Agai
 
 # Conclusion
 
-Skype does not do any sort of tamper validation with their messaging component and therefore anything can be spoofed. There's more things you can play around with such as Emojis, Gifs, Polls etc. but I only showed what I felt are the most important ones.
+Skype does not do any sort of tamper validation with their messaging component and therefore anything can be spoofed. There's more things you can play around with such as Emojis, Gifs, Polls etc. but I only showed what I felt were the most important ones.
