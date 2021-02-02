@@ -10,7 +10,7 @@ Skype is plagued with spoofing vulnerabilities that Microsoft did not think need
 
 It was another day of bug bounty hunting, the domain being tested is <b>web.skype.com</b>. After thorough testing, I realized the messaging functionality does not protect against tampering and so spoofing is possible. As of publishing this article, the vulnerabilities mentioned still exist. Microsoft did not deem these vulnerabilities to be serious enough for immediate remediation, but will be fixed in future versions.
 
-# Table of Content
+# Table of Contents
 
 There's quite a bit of interesting things I discovered so feel free to jump to whatever section you like.
 
