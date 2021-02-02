@@ -1,6 +1,6 @@
 ---
 title: Spoofing and Attacking With Skype
-date: "2021-02-01"
+date: "2021-02-02"
 featuredImage: './skype-logo.png'
 ---
 
