@@ -1,7 +1,7 @@
 ---
 title: Discovering Zero-Day Vulnerabilities McAfee Products
 date: "2021-5-28"
-featuredImage: './mcafee.jpg'
+featuredImage: './mcafee.png'
 ---
 
 Discovery and exploitation of two Zero-Day vulnerbilities affecting Mcafee Agent < 5.7.3 and McAfee Drive Encryption < 7.2.9.5<!-- end --> 
@@ -76,7 +76,7 @@ I created a simple DLL that launches Notepad.exe and modified the registry key t
 
 We see below that notepad is launched with SYSTEM privileges.
 
-![Permissions](./permissions.jpg)
+![Permissions](./permission.jpg)
 
 ## No CVE issued
 
