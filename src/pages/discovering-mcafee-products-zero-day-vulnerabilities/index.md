@@ -1,6 +1,6 @@
 ---
-title: Discovering Zero-Day Vulnerabilities McAfee Products
-date: "2021-5-28"
+title: Discovering Zero-Day Vulnerabilities in McAfee Products
+date: "2021-06-09"
 featuredImage: './mcafee.png'
 ---
 
@@ -8,11 +8,11 @@ Discovery and exploitation of two Zero-Day vulnerbilities affecting Mcafee Agent
 
 # Introduction
 
-At the beginning of 2021 I had some free time so I tried to find vulnerabilities in McAfee products. After a week of testing various techniques **I managed to discover two Zero-Day vulnerabilities**. Below I explain how I discovered them and how to exploit them.
+At the beginning of 2021 I had some free time so I tried to find vulnerabilities in McAfee products. After a week of testing various techniques **I managed to discover two Zero-Day vulnerabilities**. Below I explain how I discovered and exploited them.
 
 # Dumping SiteList.xml With User Privileges (CVE-2021-31838)
 
-This vulnerability affects McAfee Agent running on versions below 5.7.3 and requires normal user privileges.
+This vulnerability affects **McAfee Agent < 5.7.3** and requires normal user privileges.
 
 Sitelist.xml is an important target when attacking machines with McAfee products. It contains UNC paths, usernames, server names, and encrypted passwords (which can be decrypted). In my <a href="https://blog.thecybersecuritytutor.com/abusing-mcafee-vulnerabilities-misconfigurations/">previous article</a>, I listed a few ways to find sitelist.xml. This vulnerbility creates another way to get ahold of sitelist.xml.
 
@@ -24,7 +24,7 @@ If you try to run it from an account with low privileges you'll get 'Access is D
 
 ![Access-Denied](./access_denied.png)
 
-Fortunately, I noticed a problem with the permissions set on the parent folder that contains the executable. A user with low privileges can copy and paste the parent folder to a different location and with that in mind, I copied the parent folder to my desktop and tried executing maconfig.exe and it ran!
+Fortunately, I noticed a problem with the permissions set on the parent folder which contains the executable maconfig.exe. A user with low privileges can copy and paste the parent folder to a different location and with that in mind, I copied the parent folder to my desktop and tried executing maconfig.exe and it ran!
 
 ![Maconfig](./maconfig_help.png)
 
@@ -32,7 +32,7 @@ Fortunately, I noticed a problem with the permissions set on the parent folder t
 
 Exploiting the vulnerability is extremely easy:
 
-1. Copy the folder "C:\Program Files\McAfee\Agent" to a location you write access to (e.g. Desktop)
+1. Copy the folder "C:\Program Files\McAfee\Agent" to a location you have write access to (e.g. Desktop)
 2. Run the following command: **maconfig.exe -getsiteinfo \[destination\]**
 3. Use <a href="https://github.com/funoverip/mcafee-sitelist-pwd-decryption">this tool</a> to decrypt the passwords in sitelist.xml
 
@@ -43,7 +43,7 @@ Exploiting the vulnerability is extremely easy:
 
 # DLL Hijacking For Privilege Escalation & Persistence
 
-This vulnerability affects McAfee Drive Encryption < 7.2.9.5 and requires local administrator privileges as a prerequisite.
+This vulnerability affects **McAfee Drive Encryption < 7.2.9.5** and requires local administrator privileges as a prerequisite.
 
 I was able to execute any DLL upon the screen locking or unlocking. I was surprised at first because most (if not all) security vendors prevent any external DLLs from being injected into their processes. After a few hours of testing and analysis I eventually understood why this works.
 
@@ -61,7 +61,7 @@ It turns out the reason this works is because the DLL isn't injected into a McAf
 
 ## Exploitation
 
-To exploit this vulnerability you simply must do the following:
+To exploit this vulnerability follow the steps below:
 
 1. Create your malicious dll (let's call it evil.dll)
 2. Run the following command to modify the registry: **reg add "HKLM\SOFTWARE\McAfee EndPoint Encryption\AppExtensions\MfeCryptoAdapter" /t reg_sz /v dllpath /d C:\path\to\malicious\dll\evil.dll**
@@ -80,10 +80,6 @@ We see below that notepad is launched with SYSTEM privileges.
 
 ## No CVE issued
 
-After reporting this vulnerability to McAfee they replied with the following:
+Unfortunately after reporting this vulnerability to McAfee they replied with the following:
 
 *We are not planning to put another CVE for the DLL Hijacking issue as fixing the registry keys will automatically get this resolved.*
-
-# Remediation
-
-Update to McAfee Agent 5.7.3
