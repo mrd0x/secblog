@@ -4,7 +4,7 @@ date: "2021-06-09"
 featuredImage: './mcafee.png'
 ---
 
-Discovery and exploitation of two Zero-Day vulnerbilities affecting Mcafee Agent < 5.7.3 and McAfee Drive Encryption < 7.2.9.5<!-- end --> 
+Discovery and exploitation of two Zero-Day vulnerabilities affecting Mcafee Agent < 5.7.3 and McAfee Drive Encryption < 7.2.9.5<!-- end --> 
 
 # Introduction
 
