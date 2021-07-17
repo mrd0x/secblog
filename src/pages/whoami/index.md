@@ -16,6 +16,6 @@ There may be mistakes or better ways of doing things so if you have any comments
 
 ## Social Media
 
-Instagram: <b>@TheCyberSecurityTutor</b>
+Instagram: <a href="https://www.instagram.com/thecybersecuritytutor/">@TheCyberSecurityTutor</a>
 
-Twitter: <b>@mrd0x</b>
+Twitter: <a href="https://twitter.com/mrd0x">@mrd0x</a>

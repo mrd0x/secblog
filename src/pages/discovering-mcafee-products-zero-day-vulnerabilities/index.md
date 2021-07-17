@@ -14,7 +14,7 @@ At the beginning of 2021 I had some free time so I tried to find vulnerabilities
 
 This vulnerability affects **McAfee Agent < 5.7.3** and requires normal user privileges.
 
-Sitelist.xml is an important target when attacking machines with McAfee products. It contains UNC paths, usernames, server names, and encrypted passwords (which can be decrypted). In my <a href="https://blog.thecybersecuritytutor.com/abusing-mcafee-vulnerabilities-misconfigurations/">previous article</a>, I listed a few ways to find sitelist.xml. This vulnerbility creates another way to get ahold of sitelist.xml.
+Sitelist.xml is an important target when attacking machines with McAfee products. It contains UNC paths, usernames, server names, and encrypted passwords (which can be decrypted). In my <a href="https://blog.thecybersecuritytutor.com/abusing-mcafee-vulnerabilities-misconfigurations/">previous article</a>, I listed a few ways to find sitelist.xml. This vulnerability creates another way to get ahold of sitelist.xml.
 
 ## Discovering The Vulnerability
 
