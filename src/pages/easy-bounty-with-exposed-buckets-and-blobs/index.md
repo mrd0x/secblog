@@ -20,9 +20,21 @@ Finding exposed buckets is my favorite way of getting a payout because it doesn'
 
 Another well-known and documented way is using search engine dorks (Google/Bing/DuckDuckGo etc). I'm not going to dive deep into it since there's various dorks you can find online but again be creative and patient.
 
-    Sample Dorks:
+    Sample dorks:
     site:s3.amazonaws.com AND intext:"password"
     inurl:s3.amazonaws.com AND accounts
+
+# Github
+
+Sensitive data posted onto Github repos has been a hot topic for a while now. Many scanning tools were created for developers to prevent them from pushing API tokens, keys, passwords and other sensitive data. But that won't stop developers from posting links to buckets and blobs.
+
+Use Github to search for S3 buckets and/or Blobs. When using this method I suggest you don't narrow your scope and focus purely on finding exposed buckets. If there's leaked tokens and keys while you're searching that's even better!
+
+    Sample Github queries:
+    s3.amazonaws.com AND "private"
+    s3.amazonaws.com AND "password"
+    blob.core.windows.net AND "sql"
+    blob.core.windows.net AND "key"
 
 
 # Azure Blobs
