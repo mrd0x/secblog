@@ -95,7 +95,7 @@ I also found <a href="https://www.netspi.com/blog/technical/cloud-penetration-te
 
 # Results
 
-In under a week I made several submissions and the companies that did provide bounties were mostly generous.
+In less a week I made several submissions and the companies that did provide bounties were mostly generous.
 
 ![Payout-One](./payout1.png)
 
