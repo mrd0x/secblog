@@ -17,7 +17,7 @@ I personally feel cdb doesn't get the credit it deserves, I mean it has <i>a lot
 
 # Running Shellcode
 
-Exploit Monday released a great <a href="http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html">article</a> in 2016 showing how to use cdb.exe to run shellcode and bypass application whitelisting. I highly recommend you check it out before continuing along. Essentially what you're doing is:
+Exploit Monday released a great <a href="https://web.archive.org/web/20210305190100/http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html" target="_blank">article</a> in 2016 showing how to use cdb.exe to run shellcode and bypass application whitelisting. I highly recommend you check it out before continuing along. Essentially what you're doing is:
 
 1. Allocating RWX memory
 2. Copying the shellcode to the allocated buffer
@@ -139,7 +139,7 @@ Cdb may come in handy during some engagements so it's best to have the executabl
 
 # References
 
-* http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+* https://web.archive.org/web/20210305190100/http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
 * https://github.com/galoryber/MITRE/blob/master/Defense_Evasion/T1127-CDB.py
 * https://fortynorthsecurity.com/blog/how-to-bypass-wdac-with-dbgsrv-exe/
 
