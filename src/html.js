@@ -13,6 +13,10 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <meta name="twitter:title" content="Red Team and Security Research Notes | mr.d0x" />
+          <meta name="twitter:description" content="Providing red team techniques and security research" />
+          <meta name="twitter:image" content="https://blog.thecybersecuritytutor.com/static/main-e0b5f915e38de61538ec75ae8fb3f625.png" />
+          <meta name="twitter:card" content="summary_large_image"/>
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
         </head>
