@@ -40,7 +40,7 @@ First upload your malicious .docm file to OneDrive (Avoid using .doc as I notice
 
 ![Upload-Docm](./outlook1_upload_docm.png)
 
-Next, go compose an email to the target and attach that file and immediately intercept the request via Burp (or any other HTTP proxy). In the first request look for your file extension and modify it to any extension you'd like. I changed my .docm to .docx.
+Next, go compose an email to the target and attach that file and immediately intercept the request via Burp (or any other HTTP proxy). In the request look for the current file extension and modify it to any extension you'd like. I changed my .docm to .docx.
 
 ![Burp-Outlook](./outlook_burp.png)
 
