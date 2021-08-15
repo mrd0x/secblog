@@ -32,7 +32,7 @@ Of course, this can be done to any file extension. In the image below my .exe fi
 
 Unfortunately, this isn't purely a Google problem as I realized OneDrive faces the same issue. Below I demonstrate two ways to masquerade extensions using OneDrive and Outlook.
 
-## The Quick Way
+## Method 1
 
 **This method does not work if the target is using O365/Outlook.**
 
@@ -44,13 +44,13 @@ Next, go compose an email to the target and attach that file and immediately int
 
 ![Burp-Outlook](./outlook_burp.png)
 
-And upon checking the email and the user sees the spoofed extension. But upon download, the original extension is used.
+Upon checking the email, the user will see the spoofed extension. But upon download the original extension is used.
 
 ![Spoofed-Docx](./outlook_docx.png)
 
 ![Outlook-Download](./outlook_download.png)
 
-## The Longer Way
+## Method 2
 
 First upload your malicious .docm file to OneDrive (Avoid using .doc as I noticed OneDrive will automatically change it to .docx).
 
@@ -60,7 +60,7 @@ Next, you'll want to rename the file extension to docx. This requires a HTTP pro
 
 ![Change-File-Extension](./outlook2_rename_to_docx.png)
 
-Afterwards compose an email to the target and attach the .docx file. After sending the file go back and change the file to .docm.
+Afterwards compose an email to the target and attach the .docx file. After sending the email, revert the file to its original extension.
 
 ![Compose-Email](./outlook3_email_docx_file.png)
 
@@ -122,7 +122,7 @@ The user now agrees to download the file, but instead of saving it they will ope
 
 ## Scenario 2
 
-In the second scenario, the file is automatically saved and the user will need to open it with Word somehow. Clearly this scenario is not as ideal because double clicking on the file wont't work. Nonetheless, below I demonstrate the scenario. I start with the assumption that the user had already downloaded the file. Although I would agree that this scenario seems less likely to happen we have to remember that the user had Google vouch for them that the file is a Word document.
+In the second scenario, the file is automatically saved and the user will need to open it with Word somehow. Clearly this scenario is not as ideal because double clicking on the file won't work. Nonetheless, below I demonstrate the scenario. I start with the assumption that the user had already downloaded the file. Although I would agree that this scenario seems less likely to happen we have to remember that the user had Google vouch for them that the file is a Word document.
 
 ![Scenario-Two](./scenario2.gif)
 
