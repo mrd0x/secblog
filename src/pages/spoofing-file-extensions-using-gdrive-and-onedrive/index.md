@@ -135,7 +135,7 @@ The third scenario involves sending the user the Google Drive link and upon down
 # Things To Consider
 
 * Cloud providers are always scanning your files for malicious content
-* If your macros consist of any autorun functions (e.g AutoOpen) then Google will automatically flag it as malware.
+* If your macros consist of any autorun functions (e.g AutoOpen) then Google will automatically flag it as malware. If the autorun functions are required use OneDrive instead.
 * Be smart, don't spoof a .txt file as an .exe because it wiil still need to go through the browser security and smartscreen and other security measures.
 
 
