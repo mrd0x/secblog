@@ -4,13 +4,13 @@ date: "2021-06-09"
 featuredImage: './mcafee.png'
 ---
 
-Discovery and exploitation of two Zero-Day vulnerabilities affecting Mcafee Agent < 5.7.3 and McAfee Drive Encryption < 7.2.9.5<!-- end --> 
+Discovery and exploitation of two Zero-Day vulnerabilities affecting Mcafee Agent < 5.7.4 and McAfee Drive Encryption < 7.2.9.5<!-- end --> 
 
 # Introduction
 
 At the beginning of 2021 I had some free time so I tried to find vulnerabilities in McAfee products. After a week of testing various techniques **I managed to discover two Zero-Day vulnerabilities**. Below I explain how I discovered and exploited them.
 
-# Dumping SiteList.xml With User Privileges (CVE-2021-31838)
+# Dumping SiteList.xml With User Privileges (CVE-2021-31836)
 
 This vulnerability affects **McAfee Agent < 5.7.4** and requires normal user privileges.
 
