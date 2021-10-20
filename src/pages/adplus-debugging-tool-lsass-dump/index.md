@@ -3,7 +3,7 @@ title: Dumping LSASS With Adplus Debugging Tool
 date: "2021-01-09"
 ---
 
-A continuation of my series into abusing Microsoft's debugging tools for red teams. This time I show how to create a memory dump of LSASS with the Adplus debugging tool<!-- end -->. You may want to check my earlier posts that cover <a href="https://blog.thecybersecuritytutor.com/the-power-of-cdb-debugging-tool/">cdb.exe</a> and <a href="https://blog.thecybersecuritytutor.com/Exeuction-AWL-Bypass-Remote-exe-LOLBin/">remote.exe</a> debugging tools.
+A continuation of my series into abusing Microsoft's debugging tools for red teams. This time I show how to create a memory dump of LSASS with the Adplus debugging tool<!-- end -->. You may want to check my earlier posts that cover <a href="https://mrd0x.com/the-power-of-cdb-debugging-tool/">cdb.exe</a> and <a href="https://mrd0x.com/Exeuction-AWL-Bypass-Remote-exe-LOLBin/">remote.exe</a> debugging tools.
 
 # Introduction
 

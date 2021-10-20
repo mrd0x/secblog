@@ -10,8 +10,8 @@ module.exports = {
   postsPerPage: 7, // Required
   social: {
     twitter: 'https://twitter.com/mrd0x',
-    instagram: 'https://instagram.com/TheCyberSecurityTutor',
+    instagram: 'https://instagram.com/mrd0x_',
   },
   pathPrefix: '/',
-  siteUrl: 'https://blog.thecybersecuritytutor.com',
+  siteUrl: 'https://mrd0x.com',
 };

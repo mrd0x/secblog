@@ -24,7 +24,7 @@ Done! Now the user will be immediately added to the chat without any approval ne
 
 # Tampering With File Attachments
 
-If you've seen the spoofing horrors in my <a href="https://blog.thecybersecuritytutor.com/spoofing-and-attacking-with-skype/">Skype article</a> then it'll be of no surprise that Microsoft Teams can be spoofed too and it's very similiar.
+If you've seen the spoofing horrors in my <a href="https://mrd0x.com/spoofing-and-attacking-with-skype/">Skype article</a> then it'll be of no surprise that Microsoft Teams can be spoofed too and it's very similiar.
 
 ## Spoofing File Extension
 
