@@ -8,13 +8,13 @@ A quick and easy way to get your domain past any email spam filter by hiding beh
 
 # Introduction
 
-The way I ran into this bug or feature (you can decide for yourself at the end) was completely by accident. I wasn't actually hunting for bugs on Google this time, I actually needed to use their <a href="https://translate.google.com">Google Translate</a> service. I knew there was a way to translate domains I just couldn't remember how. After a quick search it turns out all you have to do is type in the domain name and you get a link to to the translated domain as shown below.
+The way I ran into this bug (or feature, you can decide for yourself) was completely by accident. I wasn't hunting for bugs on Google this time, I actually needed to use the <a href="https://translate.google.com">Google Translate</a> service. I knew there was a way to translate domains I just couldn't remember how. After a quick search it turns out all you have to do is type in the domain name and you get a link to the translated domain as shown below.
 
 ![Translate-Domain](./translate-domain.png)
 
 # Masquerading Google's Domain
 
-Clicking on the link shows in the previous image will take you to the translated domain with a unique domain name.
+Clicking on the link shown in the previous image will take you to the translated domain with an interesting domain name.
 
 
 `https://mrd0x-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=ar&_x_tr_hl=en-GB&_x_tr_pto=nui`
@@ -23,7 +23,7 @@ Clicking on the link shows in the previous image will take you to the translated
 
 ## Domain Name Format
 
-The translated domain is showing under a `*.translate.goog` and so the format looks something like this:
+The translated domain is showing under `*.translate.goog` and so the format looks something like this:
 
 `https://subdomain-domain-tld.translate.goog/?_x_tr_sl=en&_x_tr_tl=ar&_x_tr_hl=en-GB&_x_tr_pto=nui`
 
@@ -33,9 +33,9 @@ The only issue we have left is that annoying menu bar at the top of the screen. 
 
 `https://mrd0x-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=en`
 
-## Reverting Back To Original Domain
+## Reverting Back To The Original Domain Name
 
-One last thing to point out is that when the user clicks on another link within the domain, the URL will revert back to the real domain name.
+One last thing to point out is that when a user clicks on another link within the domain, the URL will revert back to the real domain name.
 
 ![Demo](./demo.gif)
 
