@@ -4,7 +4,7 @@ date: "2021-10-20"
 featuredImage: './logo.png'
 ---
 
-A quick and easy way to get your domain past any email spam filter by hiding behind Google's domain.<!-- end --> 
+A quick and easy way to bypass link analyzers by hiding behind Google's domain.<!-- end --> 
 
 # Introduction
 
