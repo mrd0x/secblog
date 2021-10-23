@@ -4,7 +4,7 @@ date: "2021-10-22"
 featuredImage: './logo.png'
 ---
 
-Bypass Microsoft Defender when spawning a PowerShell.exe process from MS Word<!-- end -->.
+Bypass Microsoft Defender when spawning a powershell.exe process from MS Word<!-- end -->.
 
 # Parent/Child Process Relationship
 
