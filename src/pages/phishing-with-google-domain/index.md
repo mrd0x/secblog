@@ -41,6 +41,6 @@ One last thing to point out is that when a user clicks on another link within th
 
 # Conclusion
 
-This was a quick and easy way to hide your domain behind Google's domain to bypass domain filtering, reputation checks, spam filters etc.
+This was a quick and easy way to hide your domain behind Google's domain to bypass domain filtering, domain reputation checks etc.
 
 If you've been keeping up with my posts you know I generally don't report phishing-related bugs (or features) to companies as they almost never pay out for it.
