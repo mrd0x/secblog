@@ -1,5 +1,5 @@
 ---
-title: Spawning PowerShell With Macros Without Triggering MS Defender
+title: Defender Bypass - Spawn PowerShell Using Macros
 date: "2021-10-22"
 featuredImage: './logo.png'
 ---
@@ -30,7 +30,7 @@ Below we have an innocent looking VBA script that spawns PowerShell.exe via the 
 
 Unfortunately, Defender doesn't seem to agree that it's innocent. PowerShell has been abused to an extent where Microsoft Defender doesn't seem care what the command does.
 
-<img src="./triggered.png" width="50%" height="50%"/>
+<img src="./triggered.png" width="400px" height="300px"/>
 
 If we go view 'Protection History' we can see its being treated as a Trojan.
 
