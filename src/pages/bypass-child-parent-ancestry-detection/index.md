@@ -1,5 +1,5 @@
 ---
-title: Bypass Defender - Spawn A PowerShell Process With VBA
+title: Spawning PowerShell With Macros Without Triggering MS Defender
 date: "2021-10-22"
 featuredImage: './logo.png'
 ---
@@ -14,7 +14,19 @@ Security solutions often monitor process relationships to detect malicious behav
 
 Below we have an innocent looking VBA script that spawns PowerShell.exe via the `Shell` command and runs `ping google.com`.
 
-![Clean-Powershell](./clean.png)
+    Sub AutoOpen()
+    Test
+    End Sub
+
+    Sub Document_Open()
+    Test
+    End Sub
+
+    Sub Test()
+    Dim str As String
+    str = "powershell.exe -c ping google.com"
+    Shell str, vbHide
+    End Sub
 
 Unfortunately, Defender doesn't seem to agree that it's innocent. PowerShell has been abused to an extent where Microsoft Defender doesn't seem care what the command does.
 
