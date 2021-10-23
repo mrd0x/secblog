@@ -1,7 +1,6 @@
 ---
-title: Defender Bypass - Spawn PowerShell Using Macros
+title: Bypass Defender And Spawn PowerShell With Macros
 date: "2021-10-22"
-featuredImage: './logo.png'
 ---
 
 Bypass Microsoft Defender when spawning a powershell.exe process from MS Word<!-- end -->.
