@@ -23,9 +23,7 @@ Below we have an innocent looking VBA script that spawns PowerShell.exe via the 
     End Sub
 
     Sub Test()
-    Dim str As String
-    str = "powershell.exe -c ping google.com"
-    Shell str, vbHide
+    Shell "powershell.exe -c ping google.com", vbNormalFocus
     End Sub
 
 Unfortunately, Defender doesn't seem to agree that it's innocent. PowerShell has been abused to an extent where Microsoft Defender doesn't seem care what the command does.
