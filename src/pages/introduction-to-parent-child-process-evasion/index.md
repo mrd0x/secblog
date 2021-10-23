@@ -3,7 +3,7 @@ title: Introduction to Parent-Child Process Evasion
 date: "2021-10-22"
 ---
 
-Evading Microsoft Defender when using macros to spawn powershell.exe<!-- end -->.
+Simple changes in process relationship could bypass certain security solutions<!-- end -->.
 
 # Parent/Child Process Relationship
 
