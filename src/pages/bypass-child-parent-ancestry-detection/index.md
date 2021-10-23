@@ -30,7 +30,7 @@ Below we have an innocent looking VBA script that spawns PowerShell.exe via the 
 
 Unfortunately, Defender doesn't seem to agree that it's innocent. PowerShell has been abused to an extent where Microsoft Defender doesn't seem care what the command does.
 
-![Triggered-Defender](./triggered.png)
+<img src="./triggered.png" width="50%" height="50%">
 
 If we go view 'Protection History' we can see its being treated as a Trojan.
 
