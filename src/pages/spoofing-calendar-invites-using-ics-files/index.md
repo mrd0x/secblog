@@ -46,7 +46,7 @@ Sign in to the other email, click on the email invitation and download the invit
 
  `ORGANIZER;CN=spoof@company.com:mailto:mrd0x@hotmail.com`
 
- As for the Attendees you can add as many as you'd like and again modify the `CN=` value and that's the email the user will see.
+ As for the attendees you can add as many as you'd like and again modify the `CN=` value and that's the email the user will see.
 
  `ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=fakeattendee@company.com;X-NUM-GUESTS=0:mailto:lol@gmail.com`
 
@@ -62,7 +62,7 @@ For example, if one of the attendees has `CN=johnathan@company.com` and `mailto:
 
 ## Important Caveat - Please read
 
-Make sure the `mailto:` address of the organizer is a **non-Google email** (not Gmail or Google Workspace). For some reason if it's a Google email the 'Yes/Maybe/No' buttons are not included in the email. For my demo I've used a Hotmail account.
+Make sure the `mailto:` address of the organizer is a **non-Google email** (not Gmail or Google Workspace). For some reason if it's a Google email the 'Yes/Maybe/No' buttons are not included in the email. For my example I've used a Hotmail account.
 
 ## Calendar Title & Time
 
@@ -72,7 +72,7 @@ As for the time its by modifying the `DTSTART:` and `DTEND:` keys.
 
 # Recap
 
-I'll recap the steps in case you got lost. I start with the assumption that I've already downloaded the .ics file.
+I'll recap the steps in case you got lost. I start with the assumption that I've already downloaded the invite.ics file.
 
 ## Step 1
 
@@ -84,7 +84,7 @@ Spoof the organizer and the attendees by modifying the `CN=` and `mailto:` value
 
     ORGANIZER;CN=ceo@company.com:mailto:mrd0x@hotmail.com
     ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
-    TRUE;CN=mrd0xmsobb@gmail.com;X-NUM-GUESTS=0:mailto:mrd0xmsobb@gmail.com
+    TRUE;CN=victim@gmail.com;X-NUM-GUESTS=0:mailto:victim@gmail.com
     ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=
     TRUE;CN=ciso@company.com;X-NUM-GUESTS=0:mailto:mrd0x3@hotmail.com
     ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=
