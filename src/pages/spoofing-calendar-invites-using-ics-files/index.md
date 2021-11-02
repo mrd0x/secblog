@@ -1,6 +1,6 @@
 ---
 title: Spoofing Calendar Invites Using .ics Files
-date: "2021-11-2"
+date: "2021-11-02"
 featuredImage: './logo.png'
 ---
 
