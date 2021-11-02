@@ -21,7 +21,7 @@ I found out that this technique will work on all the most popular emailing provi
 
 # Attack
 
-## Download a .ics Template
+## Download An .ics Template
 
 The easiest way to get a .ics file is by creating a Google Calendar invite from one Gmail account to another and then downloading the **invite.ics** email attachment.
 
