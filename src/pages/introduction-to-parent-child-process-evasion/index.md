@@ -65,7 +65,7 @@ This way `cmd.exe` and `powershell.exe` are avoided as direct child processes.
 
 It seems that Defender blacklists `powershell.exe` as a direct child process. In pseudocode it's probably programmed something like this:
 
-`if WINWORD.exe spawns powershell.exe then Trojan`
+`if WINWORD.EXE spawns powershell.exe then Trojan`
 
 Clearly we don't fit the above description so we're good!
 

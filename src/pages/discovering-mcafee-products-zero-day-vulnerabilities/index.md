@@ -41,6 +41,10 @@ Exploiting the vulnerability is extremely easy:
 
 ![Maconfig-Demo](./maconfig_demo.gif)
 
+## Acknowledgment
+
+![Ack](./ack.png)
+
 # DLL Hijacking For Privilege Escalation & Persistence
 
 This vulnerability affects **McAfee Drive Encryption < 7.2.9.5** and requires local administrator privileges as a prerequisite.
