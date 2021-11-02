@@ -13,7 +13,7 @@ It's well known that hackers have previously used .ics files during phishing cam
 * <a target="_blank" href="https://cofense.com/youre-invited-phishing-links-inside-ics-calendar-attachments/">Cofense</a>
 * <a target="_blank" href="https://isc.sans.edu/forums/diary/Spam+Delivered+via+ICS+Files/21611/">SANS ISC</a>
 
-After reading these we can clearly see that .ics files can be pretty dangerous. But recently while testing Google Calendar I discovered a way to abuse .ics files in a way that, as far as I'm aware, hasn't been used before. This technique allows you to create a calendar invite meeting with a spoofed organizer, attendees and attendance responses.
+After reading these we can clearly see that .ics files can be pretty dangerous. But recently while testing Google Calendar I found that .ics files can be abused in a way that,as far as I'm aware, hasn't been used before. This technique allows you to create a calendar invite meeting with a spoofed organizer, attendees and attendance responses.
 
 ## Compatability
 
@@ -70,9 +70,9 @@ The calendar title can be changed by modifying the `Summary:` key in the .ics fi
 
 As for the time its by modifying the `DTSTART:` and `DTEND:` keys.
 
-# Demo
+# Recap
 
-The demo starts with the assumption that I've already downloaded the .ics file.
+I'll recap the steps in case you got lost. I start with the assumption that I've already downloaded the .ics file.
 
 ## Step 1
 
