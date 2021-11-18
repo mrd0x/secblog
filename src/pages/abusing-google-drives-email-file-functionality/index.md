@@ -1,7 +1,6 @@
 ---
 title: Abusing Google Drive's Email File Functionality
 date: "2021-11-17"
-featuredImage: ''
 ---
 
 Google Drive's "Email this file" functionality can be used for phishing purposes<!-- end -->.
