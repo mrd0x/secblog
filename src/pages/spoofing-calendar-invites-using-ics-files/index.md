@@ -121,7 +121,7 @@ As expected the user sees the spoofed names.
 
 ![Results](./results.png)
 
-And both invited users have accepted the meeting
+And both spoofed users have already accepted the meeting.
 
 ![Accepted](./accepted.png)
 
@@ -132,5 +132,4 @@ By hovering over the names on Google Calendar, the `mailto:` email will appear s
 For example: `CN=johnathan@company.com` and `mailto:johnathan@gmail.com`
 
 ![Hover](./hover.png)
-
 
