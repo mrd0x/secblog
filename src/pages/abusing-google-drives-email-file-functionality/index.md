@@ -3,7 +3,7 @@ title: Abusing Google Drive's Email File Functionality
 date: "2021-11-17"
 ---
 
-Google Drive's "Email this file" functionality can be used for phishing purposes<!-- end -->.
+Google Drive's email file functionality can be used to send phishing emails via the google.com domain<!-- end -->.
 
 # Introduction
 
