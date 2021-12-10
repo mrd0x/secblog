@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams Attacks
+title: Microsoft Teams Abuse
 date: "2021-12-10"
 featuredImage: './teams.png'
 ---
@@ -65,9 +65,13 @@ You can spoof this link by intercepting the request and modifying microsoft.com 
 
 You can use the Team's platform to send SMS messages to users. Using the search bar search for a number, type a message in the chat and send it.
 
+![SMS-Search](./sms.png)
+
+The request body looks like this:
+
 ![SMS-Burp](./sms-burp.png)
 
-The victim user will see something like this:
+The victim user will receive a SMS text which looks like this:
 
 ![SMS](./sms.jpg)
 
