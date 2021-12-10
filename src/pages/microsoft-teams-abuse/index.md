@@ -67,7 +67,7 @@ You can use the Team's platform to send SMS messages to users. Using the search 
 
 ![SMS-Burp](./sms-burp.png)
 
-The target will see something like this:
+The victim user will see something like this:
 
 ![SMS](./sms.jpg)
 
