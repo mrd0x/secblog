@@ -4,7 +4,7 @@ date: "2021-12-10"
 featuredImage: './teams.png'
 ---
 
-UPDATED: With the announcment that Microsoft allows users outside of an organization to message users, I revisited Teams and added new techniques<!-- end -->.
+UPDATED: With the announcment that MS Teams allows users outside of an organization to message users, I revisited Teams and added new techniques<!-- end -->.
 
 # Gathering Information From An Email Or Number
 
