@@ -1,5 +1,5 @@
 ---
-title: Spoofing Files Using Google Drive and OneDrive
+title: Spoofing Google Drive and OneDrive File Extensions
 date: "2021-10-20"
 featuredImage: ''
 ---
