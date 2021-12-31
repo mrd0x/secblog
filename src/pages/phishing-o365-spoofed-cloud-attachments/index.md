@@ -14,7 +14,7 @@ In this article we'll explore how we can abuse the cloud attachment feature on O
 O365 allows you to upload attachments in one of two ways:
 
 * Direct Attachment - The traditional way of uploading files. Severely restricts permitted file types.
-* Cloud Attachment - Attach a file available on the cloud. File type are not restricted.
+* Cloud Attachment - Attach a file available on the cloud (OneDrive/SharePoint). File types are not restricted.
 
 The image below shows how the attachments appear to the target user. The only real visual difference is the icon and the cloud attachment partially shows the link.
 
