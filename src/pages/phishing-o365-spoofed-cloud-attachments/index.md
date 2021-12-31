@@ -7,11 +7,11 @@ Abuse the way O365 Outlook renders cloud attachments to make malicious executabl
 
 # Introduction
 
-In this article we'll explore how we can abuse the cloud attachment feature on O365 Outlook to make executables (or any other file types) appear as harmless attachments.
+In this article we'll explore how we can abuse the cloud attachment feature on O365 to make executables (or any other file types) appear as harmless attachments.
 
 # File Attachment Methods
 
-O365 Outlook allows you to upload attachments in one of two ways:
+O365 allows you to upload attachments in one of two ways:
 
 * Direct Attachment - The traditional way of uploading files. Severly restricts permitted file types.
 * Cloud Attachment - Attach a file available on the cloud. File type are not restricted.
