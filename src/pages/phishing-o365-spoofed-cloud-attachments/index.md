@@ -30,7 +30,7 @@ There are a few things you should do before moving on:
 
 2. Host the malicious executable on your server.
 
-3. Set up an HTTP redirect that redirects a path that ends with a harmless extension (.txt, .pdf, .docx etc.) to your malicious executable. This is extremely important because as we'll see O365 chooses the icon of the attachment based off the file extension of the link. In my case I used created a simple redirect from `/test/testfile.pdf` to `/evil.exe`.
+3. Set up an HTTP redirect that redirects a path which ends with a harmless extension (.txt, .pdf, .docx etc.) to your malicious executable. This is extremely important because as we'll see O365 chooses the icon of the attachment based off the file extension of the link. In my case I setup a redirect from `/test/testfile.pdf` to `/evil.exe`.
 
 ![Redirect](./redirect.png)
 
@@ -60,4 +60,4 @@ When the email is sent to the target user all they see is a PDF attachment and t
 
 # Conclusion
 
-This is a really great technique which can aid during the initial access phase. An additional perk of using this technique is the link does not get scanned and therefore increases the chances of the email landing in the inbox.
+This is a really great technique which can be helpful when trying to gain initial access. An additional perk of using this technique is the link does not get scanned and therefore increases the chances of the email landing in the inbox.
