@@ -48,11 +48,11 @@ Make sure you check the 'Share as a OneDrive link' option. This is the option wh
 
 ![Share-Options](./attach-options.png)
 
-Immediately intercept the request and modify the 'location' URL. Set it to point to the redirect path with the harmless file extension which redirects to the malicious executable.
+Immediately intercept the request and modify the `location` URL. Set it to be the URL that ends with the harmless extension that redirects to the malicious file which in this case is the `/test/testfile.pdf` path.
 
 ![Intercept](./intercept.png)
 
-When the email is sent to the target user all they see is a PDF attachment and they would have no reason to assume its anything other than that. But when it's clicked the redirect that was previously setup on the domain will take place and instead evil.exe is downloaded.
+When the email is sent to the target user all they see is a PDF attachment and they would have no reason to assume it's anything other than that. But when the attachment is clicked the malicious executable is downloaded instead.
 
 ![Spoofed-PDF](./spoofed-pdf.png)
 
