@@ -4,7 +4,7 @@ date: "2022-01-08"
 featuredImage: ''
 ---
 
-This is the start of a Twitter recap series which highlights interesting or useful posts that never made it to the blog.<!-- end -->.
+This is the start of a Twitter recap series which highlights interesting or useful posts that never made it to the blog<!-- end -->.
 
 # Table of Contents
 
