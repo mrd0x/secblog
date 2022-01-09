@@ -21,7 +21,7 @@ This is the start of a Twitter recap series which highlights interesting or usef
 11. O365 - Bypass Malicious Link Analysis
 12. MS Edge - Download Files Via Command Line
 13. MS Edge/Chrome - Download Files Via Command Line
-14. Defender AV - DumpStack.log Whitelist
+14. *.log Whitelist (Bypass Static Detection)
 
 # 1.MalAPI.io Release
 
@@ -39,7 +39,7 @@ On November 12, 2021 I released the Living Off Trusted Sites Project or <a targe
 
 ![Lots-Project](./lots-project.png)
 
-# 3.Defender AV - Dump64.exe Whitelist
+# 3.Dump64.exe Whitelist (LSASS Dump)
 
 Original Tweet: <a target="_blank" href="https://twitter.com/mrd0x/status/1460597833917251595">https://twitter.com/mrd0x/status/1460597833917251595</a>
 
@@ -125,7 +125,7 @@ Download files completely through command line.
 
 ![Chromium](./chromium-dl.png)
 
-# 14. Defender AV - DumpStack.log Whitelist
+# 14. *.log Whitelist (Bypass Static Detection)
 
 Original Tweet: <a target="_blank" href="https://twitter.com/mrd0x/status/1479094189048713219">https://twitter.com/mrd0x/status/1479094189048713219</a>
 
