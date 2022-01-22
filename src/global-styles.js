@@ -24,6 +24,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif; 
     line-height: 1.5;
     padding: 50px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

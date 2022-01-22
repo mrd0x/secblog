@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   margin: 0 auto 15px auto;
   overflow: hidden;
   width: 160px;
+  max-height:300px;
 
   img {
     position: relative;
@@ -14,6 +15,7 @@ const Wrapper = styled.div`
     padding: 5px;
     border-radius: 0%;
     width: 130px;
+    object-fit: contain;
   }
 `;
 
