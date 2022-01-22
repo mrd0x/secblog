@@ -25,10 +25,10 @@ function Header({ config }) {
         
         {social &&
           <Social
-            website={social.website}
+            malapi={social.malapi}
             github={social.github}
             twitter={social.twitter}
-            instagram={social.instagram}
+            filesec={social.filesec}
           />
         }
       </Wrapper>
