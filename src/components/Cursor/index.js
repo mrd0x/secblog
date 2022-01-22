@@ -5,7 +5,7 @@ color: #0f2b3d;
 font-size: 1.8em;
 font-weight:900;
 text-align: center;
-font-family: 'Perfect DOS VGA 437','Fixedsys';
+font-family: Inter,sans-serif;
 line-height: 16px;
 
 `;

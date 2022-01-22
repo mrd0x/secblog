@@ -6,7 +6,7 @@ const P = styled.p`
   font-size: 1.8em;
   margin: 50px 30px 0;
   text-align: center;
-  font-family: 'Perfect DOS VGA 437','Fixedsys';
+  font-family: Inter,sans-serif;
   line-height: 25px;
 
 `;
