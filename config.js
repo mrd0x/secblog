@@ -11,8 +11,7 @@ module.exports = {
   social: {
     twitter: 'https://twitter.com/mrd0x',
     github: 'https://github.com/mrd0x',
-    website: 'https://lots-project.com',
-    website: 'https://malapi.io',
+    malapi: 'https://malapi.io',
   },
   pathPrefix: '/',
   siteUrl: 'https://mrd0x.com',
