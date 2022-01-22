@@ -7,7 +7,7 @@ function Social({ malapi, twitter, github, filesec }) {
   return (
     <Wrapper>
       {malapi && (
-        <SocialLink href={website} target="_blank" rel="noopener">
+        <SocialLink href={malapi} target="_blank" rel="noopener">
           <svg 
           xmlns="http://www.w3.org/2000/svg"  
           x="0px" 
