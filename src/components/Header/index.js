@@ -25,9 +25,11 @@ function Header({ config }) {
         
         {social &&
           <Social
-            malapi={social.malapi}
-            github={social.github}
             twitter={social.twitter}
+            github={social.github}
+            lots={social.lots}
+            malapi={social.malapi}
+            filesec={social.filesec}
           />
         }
       </Wrapper>
