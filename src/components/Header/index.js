@@ -28,7 +28,6 @@ function Header({ config }) {
             malapi={social.malapi}
             github={social.github}
             twitter={social.twitter}
-            filesec={social.filesec}
           />
         }
       </Wrapper>
