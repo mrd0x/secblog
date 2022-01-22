@@ -32,7 +32,6 @@ const GlobalStyle = createGlobalStyle`
 
   img {
     max-width: 100%;
-    object-fit: contain;
   }
 
   .gatsby-highlight {
