@@ -1,6 +1,6 @@
 ---
 title: Custom GDrive Previews For Malicious Attachments
-date: "2022-01-22"
+date: "2022-01-23"
 featuredImage: ''
 ---
 
@@ -22,9 +22,7 @@ After inserting the file twice, the composed email should look similar to the im
 
 Send the email and when Google prompts you to provide access to the file simply allow viewer access.
 
-![File-Access](./access.png) | 
-|:--:| 
-| *Clean Document has been inserted twice* |
+![File-Access](./access.png)
 
 Immediately, intercept the request with your favorite HTTP proxy and forward the requests until you reach the email content (look for **mail.google.com**). Now the task is very simple:
 
