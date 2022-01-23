@@ -14,15 +14,11 @@ When Google Drive attachments are added to an email, additional HTML/CSS is adde
 
 Before beginning the attack, create a file on your Google Drive (Doc, Sheet etc.). This file will be the decoy preview that the target user will see. Next, head to your inbox and compose an email, select the 'Insert files using Drive' option and insert the previously created file **twice**.
 
-![Insert-File](./insert-file.png) | 
-|:--:| 
-| *Inserting the file 'Clean Document' twice* |
+![Insert-File](./insert-file.png)
 
 After inserting the file twice, the composed email should look similar to the image below. Of course at this point you should also add the necessary context to your email.
 
-![After-Insertion](./after.png) | 
-|:--:| 
-| *Clean Document has been inserted twice* |
+![After-Insertion](./after.png)
 
 Send the email and when Google prompts you to provide access to the file simply allow viewer access.
 
@@ -57,9 +53,7 @@ And in case the target user clicks on my creative preview that I definitely did 
 
 I would like to note that you also have the option of phishing the user with no preview at all. Use the 'Insert files using Drive' option to insert any GDrive file (only once), send the email, intercept the request and set the **href** attribute to the malicious file's link.
 
-![Download-Prompt](./dl-prompt.png) | 
-|:--:| 
-| *Clicking on 'Clean Document' installs the malicious file instead* |
+![Download-Prompt](./dl-prompt.png)
 
 # Conclusion
 
