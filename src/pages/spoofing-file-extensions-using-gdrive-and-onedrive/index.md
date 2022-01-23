@@ -1,18 +1,22 @@
 ---
-title: Spoofing Google Drive and OneDrive File Extensions
+title: Spoofing Vulnerabilities In GDrive and OneDrive
 date: "2021-10-20"
 featuredImage: ''
 ---
 
 Google Drive and OneDrive contain spoofing vulnerabilities that can aid attackers with phishing<!-- end -->.
 
+# Introduction
+
+Google Drive and OneDrive are heavily integrated with their respective email service (Google Workspace & O365) and therefore they become a prime target for attackers wishing to phish users. During my testing I've come to find out that there are ways to spoof almost everything about a file when uploaded to the cloud such as the file name, file type, file icon and more. This article will show how to take advantage of this by emailing cloud attachments.
+
 # Google Drive - Masquerading File Extension
 
-First create your malicious .doc file and upload it to Google Drive.
+In the following example I'll demonstrate how to spoof the file extension of a file on GDrive. In my case I have a .doc file that I'd like to make the user think it's a .docx.
 
 ![Doc-File](./doc_file_gdrive.png)
 
-After uploading the file, modify the file extension to .docx.
+Right click the file, click on rename and modify the file extension to .docx.
 
 ![File-Rename](./file_rename.png)
 
@@ -30,29 +34,7 @@ Of course, this can be done to any file extension. In the image below my .exe fi
 
 # OneDrive - Masquerading File Extension
 
-Unfortunately, this isn't purely a Google problem as I realized OneDrive faces the same issue. Below I demonstrate two ways to masquerade extensions using OneDrive and Outlook.
-
-## Method 1
-
-**This method does not work if the target is using O365/Outlook.**
-
-First upload your malicious .docm file to OneDrive (Avoid using .doc as I noticed OneDrive will automatically change it to .docx).
-
-![Upload-Docm](./outlook1_upload_docm.png)
-
-Next, go compose an email to the target and attach that file and immediately intercept the request via Burp (or any other HTTP proxy). In the request look for the current file extension and modify it to any extension you'd like. I changed my .docm to .docx.
-
-![Burp-Outlook](./outlook_burp.png)
-
-Upon checking the email, the user will see the spoofed extension. But upon download the original extension is used.
-
-![Spoofed-Docx](./outlook_docx.png)
-
-![Outlook-Download](./outlook_download.png)
-
-## Method 2
-
-First upload your malicious .docm file to OneDrive (Avoid using .doc as I noticed OneDrive will automatically change it to .docx).
+Again, this isn't purely a Google problem as I realized OneDrive faces the same issue. Below I demonstrate how to spoof file extensions on OneDrive. First upload your malicious .docm file to OneDrive (Avoid using .doc as I noticed OneDrive will automatically change it to .docx).
 
 ![Upload-Docm](./outlook1_upload_docm.png)
 
@@ -102,41 +84,9 @@ I'm not going through this one in detail but I was also able to play around with
 
 ![Spoofed-Date](./spoofed_date.png)
 
-# Non-Existent File Extensions
+# Conclusion
 
-Another less impressive method of phishing is to use non-existent file extensions. If you create a Word document via MS Word, modify the extension to anything and upload it to Google Drive you'll notice that Google still considers the file a Word document regardless of the extension.
-
-## Scenario 1 (Best Case)
-
-In this scenario, the user receives a download prompt and chooses the 'Open With' option. We try to entice the user to download the file.
-
-![Pretext](./email_bait.png)
-
-And if they want to verify the file first by viewing it online we include something like this:
-
-![Gdrive-View](./gdrive_view.png)
-
-The user now agrees to download the file, but instead of saving it they will open with the default application, MS Word.
-
-![Scenario-One](./scenario1.gif)
-
-## Scenario 2
-
-In the second scenario, the file is automatically saved and the user will need to open it with Word somehow. Clearly this scenario is not as ideal because double clicking on the file won't work. Nonetheless, below I demonstrate the scenario. I start with the assumption that the user had already downloaded the file. Although I would agree that this scenario seems less likely to happen we have to remember that the user had Google vouch for them that the file is a Word document.
-
-![Scenario-Two](./scenario2.gif)
-
-## Scenario 3
-
-The third scenario involves sending the user the Google Drive link and upon downloading, Google will auto append the '.doc' extension.
-
-![Scenario-Three](./scenario3.png)
-
-# Things To Consider
-
-* Cloud providers are always scanning your files for malicious content
-* If your macros consist of any autorun functions (e.g AutoOpen) then Google will automatically flag it as malware. If the autorun functions are required use OneDrive instead.
-* Be smart, don't spoof a .txt file as an .exe because it wiil still need to go through the browser security and smartscreen and other security measures.
+As I presented, there's tons of spoofing opportunities for attackers to take advantage of. Feel free to reach out to me and let me know what you think of these techniques. I'm always open to feedback or even experiences if you end up using this technique.
 
 
 
