@@ -1,10 +1,10 @@
 ---
-title: Custom GDrive Previews For Malicious Attachments
+title: Custom Previews For Malicious Attachments
 date: "2022-01-23"
 featuredImage: ''
 ---
 
-A phishing technique that allows attackers to create fake previews for their malicious attachment.<!-- end --> 
+A phishing technique that allows attackers to create fake previews for their malicious attachment with Google Mail.<!-- end --> 
 
 # Introduction
 
