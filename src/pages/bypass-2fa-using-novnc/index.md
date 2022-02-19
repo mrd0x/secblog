@@ -12,7 +12,7 @@ Recently I was on an engagement where all the users had 2FA enabled on their ema
 
 ![Gmail-Issue](./gmail.png)
 
-And so I made it my mission to find a new way of bypassing 2FA which eventually lead to an interesting & unorthodox technique.
+And so I made it my mission to find a new way of bypassing 2FA which eventually lead to this interesting & unorthodox technique.
 
 # Introducing noVNC
 
