@@ -35,7 +35,7 @@ The ways that this can be abused are endless:
 
 ## Step 1 - Deploy an Ubuntu Instance
 
-Use any cloud service provider to deploy a Linux machine. I'll be using Ubuntu for this demo but of course it can be any other Linux flavour you're comfortable with.
+Use any cloud service provider to deploy a Linux machine. I'll be using Ubuntu 20.04 for this demo but of course it can be any other Linux flavour you're comfortable with.
 
 ## Step 2 - Install TigerVNC
 
@@ -90,7 +90,7 @@ Running noVNC is even easier. There are two options: either run it locally (for 
 
     # Running it publicly on port 80
     ufw allow http
-    ./noVNC/utils/novnc_proxy --vnc 0.0.0.0:5901 --port 80
+    ./noVNC/utils/novnc_proxy --vnc 0.0.0.0:5901 --listen 80
 
 ## Step 4 - Run The Browser in Kiosk Mode
 
