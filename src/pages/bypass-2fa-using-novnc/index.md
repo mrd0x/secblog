@@ -102,15 +102,21 @@ This command will need to be run from within the VNC session or else you'll get 
 
 ## Step 5 - Access The Page
 
-The `password=VNCPASSWORD` will make the user auto authenticate. noVNC is very flexible. If you'd like to rename the query parameter it's possible by modifying the `vnc_lite.html` file.
+The `autoconnect=true&password=VNCPASSWORD` will make the user auto authenticate. noVNC is very flexible. If you'd like to rename the query parameter it's possible by modifying the `vnc.html` file.
 
-    http://127.0.0.1:6080/vnc_lite.html?password=VNCPASSWORD
+    http://127.0.0.1:6080/vnc.html?autoconnect=true&password=bob123
 
-![Phishing](./vnc2.png)
+## Step 6 - Modifying CSS
 
-## Step 6 - Removing The Top Bar
+noVNC displays a custom loading page, a VNC control bar and some additional unnecessary visual items which should be removed. Open `vnc.html` then find the divs below and add the shown CSS styling.
 
-noVNC displays a bar at the top saying 'Connected to XXXXX'. It can be easily removed by modifying the `vnc_lite.html` file. Search for `#top_bar` and set it to `display:none`.
+    <!-- Hide unnecessary items -->
+    <div id="noVNC_control_bar_anchor" class="noVNC_vcenter" style="display:none;">
+    <div id="noVNC_status" style="display:none"></div>
+
+    <!-- Makes the loading page white -->
+    <div id="noVNC_transition" style="background-color:white;color:white">
+
 
 ![Phishing-2](./vnc3.png)
 
@@ -118,7 +124,7 @@ noVNC displays a bar at the top saying 'Connected to XXXXX'. It can be easily re
 
 So far what I've shown you will get you a single phishing page running which is good enough if you're planning on spear phishing. But what if you'd like to run a large phishing campaign and require several VNC instances? Remember, you cannot send the same link to different users since they'd be sharing the same VNC session. The solution is quite simple and can be easily automated.
 
-First, launch X number of instances of tigerVNC. I'll be keeping it simple and launching 2 instances.
+First, launch X number of instances of TigerVNC. I'll be keeping it simple and launching 2 instances.
 
 ![VNC-Launch](./vnc-launch.png)
 
@@ -126,7 +132,7 @@ Use `vncserver -list` to check which ports each session is using.
 
 ![VNC-Port](./vnc-port.png)
 
-The first tigerVNC session (port 5901) will be publicly accessible on port 80. The second tigerVNC session (port 5902) will be publicly accessible on port 81.
+The first TigerVNC session (port 5901) will be publicly accessible on port 80. The second TigerVNC session (port 5902) will be publicly accessible on port 81.
 
 ![noVNC-1](./novnc1.png)
 
@@ -138,7 +144,9 @@ Now you can easily access the different sessions by appending the query paramete
 
 # noVNC Auto Scaling
 
-To use noVNC's auto scale feature simply tag on another query parameter `&scale=true`. The auto scaling functionality is not always great at making maximizing the screen so I recommend you run some tests before using it.
+To use noVNC's auto scale feature simply tag on another query parameter `&resize=remote`. The URL would look like this:
+
+    http://example.com/vnc.html?autoconnect=true&password=pass123&resize=remote
 
 # Ubuntu - Disable Auto Screen Lock
 
@@ -147,9 +155,6 @@ Don't forget to disable auto screen lock otherwise a user will click your phishi
     gsettings set org.gnome.desktop.lockdown disable-lock-screen 'true'
     gsettings set org.gnome.desktop.screensaver lock-enabled false
 
-# Passively Spying on Users 
-
-It's possible to open the same link as the one sent to the target user and passively watch what they are doing. Be cautious as any interaction you do would appear to the user as well.
 
 # Alternative Software
 
