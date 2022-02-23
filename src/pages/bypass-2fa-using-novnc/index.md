@@ -169,7 +169,7 @@ This technique is not limited to using noVNC as many other solutions offer remot
 * **You are giving remote access to your machine!** It should not have anything of value stored on it. Any logged data should proably be sent to a remote machine.
 * **Don't use the root account**. You should setup a restricted user account that uses the VNC service.
 * You should also setup kiosk mode in a more restricted manner.
-* I couldn't manage to make noVNC work properly with phones.
+* I couldn't manage to make noVNC work with phones in a pratical way.
 
 # Conclusion
 
