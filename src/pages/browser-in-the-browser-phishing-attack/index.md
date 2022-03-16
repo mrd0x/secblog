@@ -8,7 +8,7 @@ This article explores a phishing technique that simulates a browser window withi
 
 # Introduction
 
-For security professionals, the URL is (for the most part) the most trusted aspect of a domain. Yes there's attacks like <a href="https://www.akamai.com/blog/security/watch-your-step-the-prevalence-of-idn-homograph-attacks" target="_blank">IDN Homograph</a> and <a href="https://www.cloudflare.com/en-ca/learning/security/global-dns-hijacking-threat/" target="_blank">DNS Hijacking</a> that may degrade the reliability of URLs but not to an extent that makes URLs unreliable.
+For security professionals, the URL is usually the most trusted aspect of a domain. Yes there's attacks like <a href="https://www.akamai.com/blog/security/watch-your-step-the-prevalence-of-idn-homograph-attacks" target="_blank">IDN Homograph</a> and <a href="https://www.cloudflare.com/en-ca/learning/security/global-dns-hijacking-threat/" target="_blank">DNS Hijacking</a> that may degrade the reliability of URLs but not to an extent that makes URLs unreliable.
 
 All of this eventually lead me to think, is it possible to make the "Check the URL" advice less reliable? After a week of brainstorming I decided that the answer is yes.
 
@@ -23,7 +23,7 @@ Quite often when we authenticate to a website via Google, Microsoft, Apple etc. 
 
 ## Replicating The Window
 
-Fortunately for us, replicating the entire window design using basic HTML/CSS is quite simple. Combine the window design with an iFrame pointing to the malicious server hosting the phishing page, and its basically indistinguishable. The image below shows the fake window compared with the real window. Very few people would notice the slight differences between the two.
+Fortunately for us, replicating the entire window design using basic HTML/CSS is quite simple. Combine the window design with an iframe pointing to the malicious server hosting the phishing page, and its basically indistinguishable. The image below shows the fake window compared with the real window. Very few people would notice the slight differences between the two.
 
 ![Real-Fake](./real-fake.png)
 
@@ -39,7 +39,7 @@ Hovering over a URL to determine if it's legitimate is not very effective when J
 
     <a href="https://gmail.com">Google</a>
 
-If an onclick event returning false is added then hovering over the link will continue to show the website but when the link is clicked, the `href` attribute is completely ignored. We can use this knowledge to make the pop-up window appear more realistic.
+If an onclick event that returns false is added, then hovering over the link will continue to show the website in the `href` attribute but when the link is clicked then the `href` attribute is ignored. We can use this knowledge to make the pop-up window appear more realistic.
 
     <a href="https://gmail.com" onclick="return launchWindow();">Google</a>
 
