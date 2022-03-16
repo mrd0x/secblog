@@ -15,7 +15,7 @@ export default class HTML extends React.Component {
           />
           <meta name="twitter:title" content="Security Research | mr.d0x" />
           <meta name="twitter:description" content="Providing security research and red team techniques" />
-          <meta name="twitter:image" content="https://mrd0x.com/static/main-e0b5f915e38de61538ec75ae8fb3f625.png" />
+          <meta name="twitter:image" content="https://mrd0x.com/static/main-005b9682391e5c2f9d941912ae173954.png" />
           <meta name="twitter:card" content="summary_large_image"/>
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
