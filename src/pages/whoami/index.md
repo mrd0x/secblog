@@ -16,8 +16,6 @@ I'm always open to feedback, suggestions and constructive comments. Feel free to
 
 ## Social Media
 
-Instagram: <a href="https://www.instagram.com/mrd0x_">@mrd0x_</a>
-
 Twitter: <a href="https://twitter.com/mrd0x">@mrd0x</a>
 
 ## Notable Achievements
