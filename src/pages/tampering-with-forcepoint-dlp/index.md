@@ -82,7 +82,7 @@ I found a few additional interesting things that may be of use.
 
 * The file ```C:\Program Files\Websense\Websense Endpoint\repository.xml``` contains a treasure of information such as names, usernames, hostnames and IPs.
 
-* In the same directory, the DLP EndPoint comes with ```Python.exe```. This  useful during an engagement.
+* In the same directory, the DLP EndPoint comes with ```Python.exe```. This can be useful to use during an engagement.
 
 * Lastly, ForcePoint has a list of folders and files it recommends to be excluded from AV. If you have write access to any of these excluded items then AV will also be bypassed (assuming the administrators followed the recommendation). The list of recommended exclusions can be found <a href="https://www.websense.com/content/support/library/deployctr/v85/dic_av_exclude.aspx" target="_blank">here</a>.
 
