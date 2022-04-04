@@ -171,6 +171,10 @@ This technique is not limited to using noVNC as many other solutions offer remot
 * You should also setup kiosk mode in a more restricted manner.
 * I couldn't manage to make noVNC work with phones in a pratical way.
 
+# Additional Resources
+
+* This Write up shows practical usage of this technique by @fhlipZero - https://fhlipzero.io/blogs/6_noVNC/noVNC.html
+
 # Conclusion
 
 Browsers are more powerful than ever and the usage of browsers as clients for remote access provides new ways for attackers to steal credentials, bypass 2FA and more. I strongly believe that what I've demonstrated in this article is only a small portion of what this technique can be used for. As usual, feel free to build off this technique or provide comments and suggestions on Twitter.
