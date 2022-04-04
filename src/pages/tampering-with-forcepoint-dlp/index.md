@@ -1,6 +1,6 @@
 ---
 title: Tampering With ForcePoint One DLP EndPoint
-date: "2021-08-06"
+date: "2022-04-04"
 featuredImage: './cover.png'
 ---
 
