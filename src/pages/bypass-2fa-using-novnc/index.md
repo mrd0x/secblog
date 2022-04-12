@@ -6,6 +6,10 @@ featuredImage: ''
 
 Steal credentials and bypass 2FA by giving users remote access to your server via an HTML5 VNC client that has a browser running in kiosk mode<!-- end -->.
 
+**UPDATE - 4/12/2022**
+
+It was recently brought to my attention that this technique was previously mentioned in a <a href="https://link.springer.com/article/10.1007/s10207-021-00548-5" target="_blank">research article</a>. Although this post was purely original and did not use any of their work, I believe it is fair to reference it out of respect for the authors' work and because it clearly goes far more in-depth than this blog post.
+
 # Introduction
 
 Recently I was on an engagement where all the users had 2FA enabled on their email. I quickly setup the great <a href="https://github.com/kgretzky/evilginx2" target="_blank">Evilginx2</a> as I usually would. I couldn't help but look at some of the outstanding issues on the Github project and realizing that some websites were implementing methods to prevent Evilginx2 and other MITM phishing tools from working. For example, if you tried using a Gmail phishlet, you probably ran into an error similar to the one shown below.
@@ -173,7 +177,7 @@ This technique is not limited to using noVNC as many other solutions offer remot
 
 # Additional Resources
 
-* This Write up shows practical usage of this technique by @fhlipZero - https://fhlipzero.io/blogs/6_noVNC/noVNC.html
+* This write up shows practical usage of this technique by @fhlipZero - https://fhlipzero.io/blogs/6_noVNC/noVNC.html
 
 # Conclusion
 
