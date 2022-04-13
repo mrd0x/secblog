@@ -58,7 +58,7 @@ Interestingly, inside the `/bin` folder there's another executable with the name
 
 Cortex XDR agents on Linux have no uninstall password. If you're root then go to `/opt/traps/bin` and use `cytool` to uninstall Cortex.
 
-# Uninstall Password Hash (Windows/OSX/Linux)
+# Cortex Password Hash (Windows/OSX/Linux)
 
 In case the default password was changed, we can grab the hash and try to crack it.
 
