@@ -1,0 +1,7 @@
+Persistence folder from generating support case:CPATR-14161
+Modifying the cryptsvc.dll: CPATR-14158 (FIXING)
+
+
+/etc/hosts: CPATR-14159 (DONE!)
+Windows 10 agent report (tdevflt modifiable registry): CPATR-14244 (DONE NOTHING)
+OSX agent report (DoS): CPATR-14245 (DONE NOTHING)
