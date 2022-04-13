@@ -50,7 +50,7 @@ Head to `C:\Program Files\Palo Alto Networks\Traps` and find `cytool.exe`. There
 
 ## OSX
 
-On Mac you would go to this path instead `/Library/Application Support/PaloAltoNetworks/Traps/bin` and use `cytool.exe`. You can use the same commands as mentioned above.
+On Mac you would go to this path instead `/Library/Application Support/PaloAltoNetworks/Traps/bin` and use `cytool`. You can use the same commands as mentioned above.
 
 Interestingly, inside the `/bin` folder there's another executable with the name `traps_uninstaller_tool` which allows you to uninstall the agent if you have the uninstall password.
 
@@ -58,7 +58,7 @@ Interestingly, inside the `/bin` folder there's another executable with the name
 
 Cortex XDR agents on Linux have no uninstall password. If you're root then go to `/opt/traps/bin` and use `cytool` to uninstall Cortex.
 
-# The Uninstall Password Hash (Windows/OSX/Linux)
+# Uninstall Password Hash (Windows/OSX/Linux)
 
 In case the default password was changed, we can grab the hash and try to crack it.
 
