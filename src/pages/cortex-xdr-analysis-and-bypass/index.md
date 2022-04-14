@@ -6,9 +6,16 @@ featuredImage: './logo.png'
 
 Analyzing Cortex XDR and finding ways to bypass it.<!-- end --> 
 
+**Update**
+
+Palo Alto's security team promptly released the following advisories:
+
+* <a href="https://security.paloaltonetworks.com/PAN-SA-2022-0002" target="_blank">Cortex XDR Agent: Product Disruption by Local Windows Administrator</a>
+* <a href="https://security.paloaltonetworks.com/PAN-SA-2022-0001" target="_blank">Cortex XDR Agent: Supervisor Password Hash Disclosure Vulnerability When Generating Support Files</a>
+
 # Introduction
 
-This article was written in July 2021 but publishing was delayed to allow the security team an opportunity to fix the findings. Unfortunately, as of today the findings have not been fixed yet. 
+This article was written in July 2021 but publishing was delayed to allow the security team an opportunity to fix the findings.
 
 All the methods require administrator/root privileges unless mentioned otherwise.
 
@@ -108,4 +115,4 @@ The uninstall password hash is available in `/opt/traps/persist/agent_settings.d
 
 # Conclusion
 
-Patching is not always as quick as we'd like it to be and I feel for the security team. Therefore, I generally provide them more than enough time to patch before disclosing bugs. Unfortunately, having ~300 days passed and the security team still unable to even provide an ETA, I felt it's appropriate to move along with disclosure.
+It's important for security solutions to implement adequate tamper protection to avoid being targeted by attackers. Furthermore, it shouldn't be trivial to obtain credentials or privileges that can disable the security solution.
