@@ -99,6 +99,8 @@ I created a simple Python script with the following parameters that successfully
 * HMAC: **SHA512**
 * Iterations: **11,112**
 
+But you can use <a href="https://twitter.com/k4nfr3/status/1514655268554133508" target="_blank">Hashcat mode 12100</a> to crack the hash. Thanks @k4nfr3.
+
 ## Dump Hash Without Elevated Privileges (Windows)
 
 There is a way to access the persistence folder on Windows without administrator privileges. If you have GUI access, open the XDR agent's console and click 'Generate Support File'. This creates a dump of the persistence folder which can be accessed without administrator privileges.
