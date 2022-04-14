@@ -43,10 +43,27 @@ If an onclick event that returns false is added, then hovering over the link wil
 
     <a href="https://gmail.com" onclick="return launchWindow();">Google</a>
 
-    function launchWindow(){
+    function launchWindow() {
         // Launch the fake authentication window
         return false; // This will make sure the href attribute is ignored
     }
+
+# Fullscreen
+
+If you want to take the obfuscation even further, open the window in fullscreen mode, when the second window is opened. A simply modification will hide the original address bar:
+
+    <a href="https://gmail.com" onclick="return launchWindow();">Google</a>
+
+    function launchWindow() {
+        if ( document.body.requestFullscreen && !document.fullscreenElement ) {
+            document.body.requestFullscreen();
+            
+            // Launch the fake authentication window
+        }
+
+        return false; // This will make sure the href attribute is ignored
+    }
+
 
 # Available Templates
 
