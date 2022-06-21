@@ -4,7 +4,7 @@ date: "2022-06-21"
 featuredImage: ''
 ---
 
-Exploring WebView2 applications and how the can be used for credential and cookie theft.<!-- end --> 
+Exploring WebView2 applications and how they can be used for credential and cookie theft.<!-- end --> 
 
 # Introduction
 
