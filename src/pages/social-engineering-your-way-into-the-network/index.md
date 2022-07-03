@@ -24,7 +24,7 @@ For example, when a user lands on a phishing page and attempts to download a bin
 
 The purpose of this blog post is to try to come up with unexpected ways to social engineer users in order to increase our initial access success rate.
 
-# Initial Access Via Copy Pasting
+# Initial Access Via Copy-Paste
 
 ```Ctrl + C``` and ```Ctrl + V``` is part of everyone's day-to-day actions when using a computer. With that being said, security training programs don't warn users of the dangers when pasting commands in certain places on a Windows machine. Let's take advantage of this gap to help us potentially gain initial access on the machine.
 
