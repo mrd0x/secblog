@@ -4,7 +4,7 @@ date: "2022-04-13"
 featuredImage: './logo.png'
 ---
 
-Analyzing Cortex XDR and finding ways to bypass it.<!-- end --> 
+Analyzing Cortex XDR and finding ways to bypass it<!-- end -->.
 
 **Update**
 
