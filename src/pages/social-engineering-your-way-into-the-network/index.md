@@ -128,16 +128,6 @@ Users are commonly trained to never type away their credentials without double c
 
 In this example, the account may be pre-configured with malicious files on OneDrive or phishing emails in their inbox.
 
-# Use Fake Images
-
-Fake images can be used as part of your pretext to make your claim look more believable. Here's an example of what an attacker could do.
-
-![Elon-Musk](./elon-musk.png)
-
-You can use faked images along with personal or internal information you've gained through the recon phase to make your pretext even more believable. For example, if you know the organiation uses Slack you can fake a Slack image.
-
-![Elon-Musk-2](./elon-musk-2.png)
-
 # Conclusion
 
 Yes we would all like it if the user were to just download and execute our binary but sometimes it may take some added creativity to eventually reach our goal. In this post I've demonstrated several ways that you can throw a user off when it comes to initial access. I'm sure there's more out methods out there but I think this post helps you to think outside the box.
