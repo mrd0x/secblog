@@ -25,7 +25,7 @@ The JWT tokens were not all the same and after decoding several of them I realiz
 * api.office.net
 * messaging.engagement.office.com
 * substrate.office.com
-* **outlook.office365.com**s
+* **outlook.office365.com**
 
 I don't know enough about these APIs but I do know that there is documentation for the <a href="https://learn.microsoft.com/en-us/previous-versions/office/office-365-api/api/version-2.0/use-outlook-rest-api" target="_blank">Outlook REST API</a>.
 
