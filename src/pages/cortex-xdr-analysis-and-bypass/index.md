@@ -1,7 +1,7 @@
 ---
 title: Bypassing Cortex XDR
 date: "2022-04-13"
-featuredImage: ''
+featuredImage: './logo.png'
 ---
 
 Analyzing Cortex XDR and finding ways to bypass it<!-- end -->.
