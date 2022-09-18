@@ -4,7 +4,7 @@ date: "2022-09-17"
 featuredImage: ''
 ---
 
-Microsoft Office desktop applications generally require users to be authenticated to their Microsoft account which makes the applications store access tokens within memory allowing an attacker to easily extract them<!-- end --> 
+Dumping tokens from Microsoft Office desktop applications' memory<!-- end --> 
 
 # Introduction
 
