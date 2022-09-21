@@ -8,7 +8,7 @@ Dumping tokens from Microsoft Office desktop applications' memory<!-- end -->
 
 # Introduction
 
-**Update**: This seems to only works against Desktop applications that are a part of a Microsoft 365 plan which is generally used by organizations.
+**Update**: This seems to only work against Desktop applications that are a part of a Microsoft 365 plan which is generally used by organizations.
 
 While I was reading the recent article about how <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-stores-auth-tokens-as-cleartext-in-windows-linux-macs/" target="_blank">Microsoft Teams stores access tokens in plaintext</a>, I asked myself if this issue extended to other Office applications. I knew that this should be somehow possible because Office applications are generally connected to a Microsoft account.
 
