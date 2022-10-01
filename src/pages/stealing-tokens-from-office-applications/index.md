@@ -1,14 +1,19 @@
 ---
 title: Stealing Access Tokens From Office Desktop Applications
 date: "2022-09-17"
-featuredImage: ''
+featuredImage: './banner.png'
 ---
 
 Dumping tokens from Microsoft Office desktop applications' memory<!-- end --> 
 
-# Introduction
+**Update**: This only works against Microsoft 365 which is generally what organizations use. It will not work on Microsoft Office Professional Plus.
 
-**Update**: This seems to only work against Desktop applications that are a part of a Microsoft 365 plan which is generally used by organizations.
+**Update 2**: Within a matter of days tools have already been built to dump Office desktop application tokens.
+* <a href="https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/OfficeMemScraper.ps1" target="_blank">OfficeMemScraper.ps1</a>
+* <a href="https://github.com/doredry/TokenFinder" target="_blank">TokenFinder.py</a>
+* <a href="https://github.com/trustedsec/CS-Remote-OPs-BOF" target="_blank">office_tokens BOF</a>
+
+# Introduction
 
 While I was reading the recent article about how <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-stores-auth-tokens-as-cleartext-in-windows-linux-macs/" target="_blank">Microsoft Teams stores access tokens in plaintext</a>, I asked myself if this issue extended to other Office applications. I knew that this should be somehow possible because Office applications are generally connected to a Microsoft account.
 
