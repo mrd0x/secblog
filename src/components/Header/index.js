@@ -27,6 +27,7 @@ function Header({ config }) {
           <Social
             twitter={social.twitter}
             //github={social.github} Uncomment this to add github
+            maldev={social.maldev}
             lots={social.lots}
             malapi={social.malapi}
             filesec={social.filesec}
