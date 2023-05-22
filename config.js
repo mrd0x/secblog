@@ -13,7 +13,8 @@ module.exports = {
     github: 'https://github.com/mrd0x',
     lots: "https://lots-project.com",
     malapi: 'https://malapi.io',
-    filesec: "https://filesec.io"
+    filesec: "https://filesec.io",
+    maldev: "https://maldevacademy.com"
   },
   pathPrefix: '/',
   siteUrl: 'https://mrd0x.com',
