@@ -3,7 +3,7 @@ import React from 'react';
 import Wrapper from './Wrapper';
 import SocialLink from './SocialLink';
 
-function Social({twitter, github, lots, malapi, filesec, }) {
+function Social({twitter, github, maldev, lots, malapi, filesec, }) {
   return (
     <Wrapper>
       {twitter && (
