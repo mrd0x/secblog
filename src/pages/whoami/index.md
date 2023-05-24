@@ -4,7 +4,7 @@ date: "2020-12-30"
 featuredImage: './featured.jpg'
 ---
 
-My name is Ahmad and I'm a penetration tester and security researcher.<!-- end --> 
+A penetration tester and security researcher.<!-- end --> 
 
 I've always been in the habit of creating personal notes but I've decided to start sharing them in hopes of:
 
