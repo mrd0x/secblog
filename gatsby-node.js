@@ -29,13 +29,11 @@ exports.createPages = ({ graphql, actions }) => {
                     date(formatString: "MMMM D, YYYY")
                     featuredImage {
                       childImageSharp {
-                        fluid(maxWidth: 850) {
-                          base64
-                          aspectRatio
-                          src
-                          srcSet
-                          sizes
-                        }
+                        gatsbyImageData(
+                          width: 850
+                          placeholder: BLURRED
+                          formats: [AUTO, WEBP, AVIF]
+                        )
                       }
                     }
                   }
@@ -43,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-        `,
+        `
       ).then(result => {
         if (result.errors) {
           console.log(result.errors);
@@ -75,7 +73,7 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-      }),
+      })
     );
   });
 };

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import GatsbyLink from 'gatsby-link';
+import { Link as GatsbyLink } from 'gatsby';
 import userConfig from '../../../config';
 
 const ContinueReading = styled(GatsbyLink)`

@@ -1,15 +1,19 @@
-import React from 'react';
-import Img from 'gatsby-image';
+import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Wrapper from './Wrapper';
+import Wrapper from "./Wrapper";
 
-function FeaturedImage({ image }) {
+const FeaturedImage = ({ image }) => {
+  // Works whether `image` is the whole File node or the childImageSharp object
+  const img = getImage(image);
+
+  if (!img) return null;
+
   return (
     <Wrapper>
-      {image?.childImageSharp?.fixed && <Img fixed={image.childImageSharp.fixed} alt="" />}
-      {image?.childImageSharp?.fluid && <Img fluid={image.childImageSharp.fluid} alt="" />}
+      <GatsbyImage image={img} alt="" />
     </Wrapper>
   );
-}
+};
 
 export default FeaturedImage;

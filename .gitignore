@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Gatsby build artifacts
+public/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment files (if you use dotenv or similar)
+.env*
+  
+# MacOS filesystem metadata
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# IDE/editor folders (add yours if different)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

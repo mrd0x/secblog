@@ -12,10 +12,11 @@ import Pagination from '../components/Pagination';
 import Summary from '../components/Summary';
 
 const IndexPage = ({ pageContext }) => {
-  const extScript = require('../../static/blinker.js')
+  const extScript = require('../../static/blinker.js');
   const { group, index, pageCount } = pageContext;
   const previousUrl = index - 1 === 1 ? '' : (index - 1).toString();
   const nextUrl = (index + 1).toString();
+
   return (
     <Layout>
       <Container>
@@ -27,8 +28,8 @@ const IndexPage = ({ pageContext }) => {
             name="description"
             content={`${userConfig.title} | ${userConfig.description}`}
           />
-          
         </Helmet>
+
         {group.map(({ node }) => (
           <Card key={node.fields.slug}>
             <Summary
@@ -40,6 +41,7 @@ const IndexPage = ({ pageContext }) => {
             />
           </Card>
         ))}
+
         <Pagination
           isFirst={index === 1}
           isLast={index === pageCount}
@@ -50,4 +52,5 @@ const IndexPage = ({ pageContext }) => {
     </Layout>
   );
 };
+
 export default IndexPage;

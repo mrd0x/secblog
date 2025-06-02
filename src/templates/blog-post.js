@@ -1,4 +1,4 @@
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 import React from 'react';
@@ -95,9 +95,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 850) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              width: 850
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
       }
