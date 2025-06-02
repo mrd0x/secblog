@@ -122,7 +122,7 @@ $filename = $data['filename'];
 $base64String = preg_replace('#^data:image/\w+;base64,#i', '', $imageBase64);
 $imageData = base64_decode($base64String);
 
-$uploadDir = '/var/www/screenshots'; // Change this to where ever you want to save the screenshot
+$uploadDir = '/var/www/imgCapture';
 $filePath = $uploadDir . '/' . $filename;
 
 if (file_put_contents($filePath, $imageData)) {
