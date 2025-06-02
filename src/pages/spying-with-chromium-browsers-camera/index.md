@@ -4,11 +4,11 @@ date: "2025-06-03"
 featuredImage: './logo.png'
 ---
 
-This blog abuses a Chromium command line flag to spy on a user by continuously taking pictures through their camera and recording their microphone audio<!-- end -->.
+This blog explores another Chromium command line flag that can be used to spy on a user by continuously taking pictures through their camera and recording their microphone audio<!-- end -->.
 
 # Introduction
 
-In the previous blog post, *Capturing Screen Activity Using Chromium Browsers*, I used the `--auto-select-desktop-capture-source=Entire` Chromium flag to automatically capture the entire screen without any user interaction. In this blog post, I'll explore another Chromium flag that allows us to bypass the approval for using the user's camera & microphone.
+In the previous blog post, *Capturing Screen Activity Using Chromium Browsers*, I used the `--auto-select-desktop-capture-source=Entire` Chromium flag to automatically capture the entire screen without any user interaction or approval. In this blog post, I'll explore another Chromium flag that allows us to bypass the approval for using the user's camera & microphone.
 
 # Permission Prompt
 
