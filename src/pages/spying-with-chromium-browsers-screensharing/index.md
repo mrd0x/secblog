@@ -149,7 +149,7 @@ By default, when launching Chromium browsers via the command line, they open in 
 
 ## Headless Demo
 
-Running `[msedge.exe|chrome.exe] --headless --auto-select-desktop-capture-source=Entire --window-size=1280,720 https://example.com/index.html` produces the image below. Ensure that you've replaced `example.com` with your domain and `index.html` should contain the `captureScreenshot` function.
+Running `[msedge.exe|chrome.exe] --headless --auto-select-desktop-capture-source=Entire --window-size=1280,720 https://example.com/index.html` produces the image below. Ensure that you've replaced `example.com` with your domain and `index.html` should contain the `captureScreenshot` function. Note: My blog website reduces the quality further, its not that bad.
 
 ![lowquality](./lowquality.png)
 
