@@ -1,6 +1,6 @@
 ---
 title: Capturing Camera & Mic Using Chromium Browsers
-date: "2025-06-02"
+date: "2025-06-03"
 featuredImage: './logo.png'
 ---
 
