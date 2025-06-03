@@ -11,7 +11,12 @@ const FeaturedImage = ({ image }) => {
 
   return (
     <Wrapper>
-      <GatsbyImage image={img} alt="" />
+      <GatsbyImage
+        image={img}
+        alt=""
+        loading="eager"            // start download immediately
+        backgroundColor="#f0f0f0"  // fill with a solid block until the PNG/WebP/AVIF arrives
+      />
     </Wrapper>
   );
 };
