@@ -240,3 +240,7 @@ if (file_put_contents($targetFile, file_get_contents($_FILES['audio']['tmp_name'
 The `/var/www/imgCapture` folder will now have audio and images saved.
 
 ![savedaudio](savedaudio.png)
+
+## Conclusion
+
+In summary, attackers can use `--auto-accept-camera-and-microphone-capture` with the `--headless` flag to automatically activate a user's camera and microphone and continuously record the user without any user interaction or approval. The user will not see anything to indicate they are being recorded, but note that the camera light will activate when the camera is in use.
