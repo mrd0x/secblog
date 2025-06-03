@@ -1,5 +1,5 @@
 ---
-title: Capturing Screen Activity Using Chromium Browsers
+title: Spying On Screen Activity Using Chromium Browsers
 date: "2025-06-02"
 featuredImage: './logo.png'
 ---

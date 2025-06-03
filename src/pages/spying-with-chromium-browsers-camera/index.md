@@ -1,5 +1,5 @@
 ---
-title: Capturing Camera & Mic Using Chromium Browsers
+title: Camera and Microphone Spying Using Chromium Browsers
 date: "2025-06-03"
 featuredImage: './logo.png'
 ---
