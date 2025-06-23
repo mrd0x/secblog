@@ -32,7 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
                         gatsbyImageData(
                           width: 850
                           placeholder: NONE
-                          formats: [AUTO, WEBP, AVIF]
+                          formats: [AUTO, WEBP]
                         )
                       }
                     }
