@@ -14,7 +14,7 @@ The simplicity of this technique makes it funny, yet it's been effective. I had 
 
 ![ClickFix-News](./clickfix-news.png)
 
-With that said, my primary issue with the current ClickFix attacks is that they heavily rely on the Run Dialog and I wanted to find an alternative method that may be just as effective. Therefore in this blog post, I'll present an interesting method to social engineer users into executing OS commands without leaving the browser. I'll be referring to this method as *FileFix Attack*, but feel free to call it whatever you want. <a href="https://x.com/HackingLZ/status/1936412263751016623">It's not like ClickFix is a good name anyways</a>.
+With that said, my primary issue with the current ClickFix attacks is that they heavily rely on the Run Dialog and I wanted to find an alternative method that may be just as effective. Therefore in this blog post, I'll present an interesting method to social engineer users into executing OS commands without leaving the browser. I'll be referring to this method as **FileFix Attack**, but feel free to call it whatever you want. <a href="https://x.com/HackingLZ/status/1936412263751016623">It's not like ClickFix is a good name anyways</a>.
 
 # File Upload Functionality
 
