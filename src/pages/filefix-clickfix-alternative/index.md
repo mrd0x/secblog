@@ -299,7 +299,7 @@ fileInput.addEventListener('change', () => {
 
 # FileFix Variation 2
 
-Upon doing further testing, I also realized another interesting behavior exhibited by the File Explorer execution method. Executable files (e.g. `.exe`) executed through the File Explorer's address bar **have its Mark of The Web (MOTW) attribute removed**. In the images below, we have `payload.exe` which starts off with a MOTW attribute indicating it was downloaded from an external source. However, once executed through the File Explorer's address bar, the executable is launched and the MOTW attribute is no longer there.
+Upon doing further testing, I also realized another interesting behavior exhibited by the File Explorer execution method. Executable files (e.g. `.exe`) executed through the File Explorer's address bar **have their Mark of The Web (MOTW) attribute removed**. In the images below, we have `payload.exe` which starts off with a MOTW attribute indicating it was downloaded from an external source. However, once executed through the File Explorer's address bar, the executable is launched and the MOTW attribute is no longer there.
 
 ![motw](./motw.png)
 
