@@ -1,7 +1,7 @@
 ---
 title: Hijacking & Spoofing Context Menu Options
 date: "2024-03-06"
-featuredImage: './SentinelOne.png'
+featuredImage: ''
 ---
 
 Hijacking SentinelOne's "Scan For Threats" context menu option and creating your own option for persistence<!-- end -->.
